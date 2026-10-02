@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="eu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Liburuen koadernoa: hojas de respuestas de Arian A1 y Bakarka 1, con corrección, y la guía de gramática Geruzak. Para trabajar los libros desde la pantalla.">
+<meta name="theme-color" content="#171B18">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
+<title>Liburuen koadernoa · Arian A1 eta Bakarka 1</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="oinarria.css">
+<script src="iturriak.js"></script>
+</head>
+<body>
+
+<div class="hub"><div class="in">
+  <a class="brand" href="index.html" aria-current="page"><b>Liburuen <em>koadernoa</em></b><span>Arian A1 · Bakarka 1</span></a>
+  <nav aria-label="Atalak">
+    <a href="arian.html"><span class="t">Arian A1</span><span class="c">12 unitate</span></a>
+    <a href="bakarka.html"><span class="t">Bakarka 1</span><span class="c">13 ikasgai</span></a>
+    <a href="geruzak.html"><span class="t">Geruzak</span><span class="c">Gramatika</span></a>
+  </nav>
+  <button type="button" class="who" id="who" data-state="local" aria-label="Perfil y guardado"><span class="dot"></span><span class="stack"><b class="nm">Sin perfil</b><span class="st">Solo en este navegador</span></span></button>
+</div></div>
+<script src="hub.js"></script>
+
+<main class="home">
+  <header class="hero">
+    <div class="eyebrow">Erantzun-orriak · A1</div>
+    <h1>Liburuen <em>koadernoa</em></h1>
+    <p class="lede">Dos libros de euskera de nivel A1 para trabajarlos desde la pantalla: cada ejercicio con su número, su página y sus casillas, y con corrección. El texto se lee en el libro.</p>
+  </header>
+
+  <section class="books" aria-label="Liburuak">
+    <a class="book i" href="arian.html" data-liburua="arian">
+      <div class="layer"></div>
+      <div class="top"><div class="code">Arian A1</div><div class="name">Ikaslearen liburua · Elkar</div></div>
+      <ul>
+        <li>12 unidades · <span data-n="ar">457</span> ejercicios, 109 con audio</li>
+        <li>Corrección en 311 ejercicios, resuelta por Claude (&#9888;)</li>
+        <li>Notas de cada apartado, con enlace a la gramática</li>
+      </ul>
+      <div class="prog"><span class="t">0 / 457</span><span class="track"><i></i></span></div>
+      <div class="go"><span>Ireki · abrir</span><span class="arr">&rarr;</span></div>
+    </a>
+    <a class="book" href="bakarka.html" data-liburua="bakarka1">
+      <div class="layer"></div>
+      <div class="top"><div class="code">Bakarka 1</div><div class="name">J.A. Letamendia · Elkar</div></div>
+      <ul>
+        <li>13 lecciones (2–14) · <span data-n="ar">144</span> ejercicios</li>
+        <li>Comprobación contra el solucionario del libro</li>
+        <li>Nota de cada lección, con enlace a la gramática</li>
+      </ul>
+      <div class="prog"><span class="t">0 / 144</span><span class="track"><i></i></span></div>
+      <div class="go"><span>Ireki · abrir</span><span class="arr">&rarr;</span></div>
+    </a>
+    <a class="book g" href="geruzak.html">
+      <div class="layer"></div>
+      <div class="top"><div class="code">Geruzak</div><div class="name">Gramatika · A1</div></div>
+      <ul>
+        <li>La gramática del nivel en 20 bloques, con tablas</li>
+        <li>Gafas: traducción y desglose de cada palabra vasca</li>
+        <li>Preparada por Claude (&#9888;): contrástala con los libros</li>
+      </ul>
+      <div class="go"><span>Ireki · abrir</span><span class="arr">&rarr;</span></div>
+    </a>
+  </section>
+
+  <h2 class="sec-h">Arian A1 · unitateak</h2>
+  <div class="units" id="unArian"></div>
+  <h2 class="sec-h">Bakarka 1 · ikasgaiak</h2>
+  <div class="units" id="unBakarka"></div>
+
+  <h2 class="sec-h">Nola erabili · cómo se usa</h2>
+  <div class="how">
+    <div><b>Con el libro delante</b><p>Aquí no está el texto de los libros. Cada ejercicio dice su página: lo lees en el libro y contestas en sus casillas.</p></div>
+    <div><b>Se guarda solo</b><p>Lo que escribes queda en este navegador. Con un perfil (nombre y PIN) te sigue al móvil y a otros navegadores.</p></div>
+    <div><b>Egiaztatu</b><p>Al terminar un ejercicio, compruébalo. En Arian las soluciones son de Claude (&#9888;); en Bakarka, las del solucionario del libro.</p></div>
+    <div><b>Libreta</b><p>Desde cada libro, la libreta reúne todo lo trabajado en un documento para guardar como PDF.</p></div>
+    <div><b>Tu libro al lado</b><p>En tu ordenador puedes enlazar tu PDF y tus audios: la página de cada ejercicio abre el libro por ahí. No se publican.</p></div>
+  </div>
+
+  <footer>
+    <p><b>Liburuen koadernoa</b> — hojas de respuestas de <i>Arian A1 · ikaslearen liburua</i> y de <i>Bakarka 1</i> (los dos de Elkar). No reproduce los libros: de cada ejercicio lleva el número, la página, la pista de audio y las casillas.</p>
+    <p>Las notas, las descripciones de los ejercicios, la guía Geruzak y las soluciones de Arian A1 son de Claude (&#9888;) y conviene contrastarlas con los libros. La comprobación de Bakarka 1 usa su solucionario sin reproducirlo.</p>
+  </footer>
+</main>
+
+<div class="gate" id="gate" hidden>
+  <div class="gbox" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+    <div class="eyebrow">Liburuen koadernoa</div>
+    <h2 id="gateTitle">Nor <em>zara</em>?</h2>
+    <p class="lede">Escribe tu nombre y el cuaderno guardará tus respuestas con él.</p>
+    <form id="gateForm">
+      <input id="gateName" type="text" autocomplete="off" placeholder="Maialen" maxlength="40" required aria-label="Tu nombre">
+      <button type="submit">Sartu</button>
+    </form>
+    <p class="fine">El perfil es el mismo que en Euskara Armairua: si ya tienes uno, entra con su nombre y su PIN.</p>
+    <button type="button" class="later" id="gateLater">Ahora no — guardar solo en este navegador</button>
+  </div>
+</div>
+
+<script src="datuak/arian-a1.js"></script>
+<script src="datuak/bakarka-1.js"></script>
+<script src="orriak.js"></script>
+<script>
+/* portada: progreso de cada libro y de cada unidad, leído de lo guardado en este navegador */
+(function(){
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
+  function paint(key, page, mount){
+    var L = LIBURUAK[key], done = 0, tot = 0;
+    mount.innerHTML = L.unitateak.map(function(u){
+      var t = ORRIAK.ariketak(u).length, n = ORRIAK.landuak(u, ORRIAK.gordea(u.id));
+      done += n; tot += t;
+      return '<a class="unit-l' + (t && n === t ? ' osoa' : '') + '" href="' + page + '#' + esc(u.id) + '"><span class="n">' + esc(u.n) + '</span><span class="t">' + esc(u.eu) + '</span><span class="p">' + n + '/' + t + '</span></a>';
+    }).join('');
+    var card = document.querySelector('.book[data-liburua="' + key + '"]');
+    card.querySelector('.prog .t').textContent = done + ' / ' + tot;
+    card.querySelector('.prog .track i').style.width = (tot ? done / tot * 100 : 0) + '%';
+    card.querySelector('[data-n="ar"]').textContent = tot;
+  }
+  function all(){ paint('arian', 'arian.html', document.getElementById('unArian')); paint('bakarka1', 'bakarka.html', document.getElementById('unBakarka')); }
+  all();
+  window.addEventListener('pageshow', all);        // al volver atrás desde un libro, el progreso al día
+})();
+</script>
+<script src="config.js"></script>
+<script src="cloud.js"></script>
+</body>
+</html>

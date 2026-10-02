@@ -1,0 +1,18 @@
+{
+  "name": "arian-a1",
+  "private": true,
+  "description": "Pruebas y herramientas de desarrollo. La web no necesita nada de esto: es HTML estático servido tal cual por GitHub Pages.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node tests/run.mjs",
+    "test:rapido": "node tests/run.mjs datos",
+    "bakarka": "node tools/bakarka-orriak.mjs",
+    "liburua": "node tools/liburua.mjs",
+    "mock": "node tests/lib/mock.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8"
+  }
+}

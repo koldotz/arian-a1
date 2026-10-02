@@ -1,0 +1,49 @@
+{
+  "name": "Liburuen koadernoa · Arian A1 eta Bakarka 1",
+  "short_name": "Koadernoa",
+  "description": "Hojas de respuestas de Arian A1 y Bakarka 1, con corrección, y la guía de gramática Geruzak.",
+  "lang": "eu",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#131613",
+  "theme_color": "#171B18",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Arian A1",
+      "short_name": "Arian",
+      "url": "arian.html"
+    },
+    {
+      "name": "Bakarka 1",
+      "short_name": "Bakarka",
+      "url": "bakarka.html"
+    },
+    {
+      "name": "Geruzak",
+      "short_name": "Geruzak",
+      "url": "geruzak.html"
+    }
+  ]
+}

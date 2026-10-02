@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs
+*.log
+
+# Dependencias de desarrollo (pruebas)
+node_modules/
+
+# Tu libro y tus audios: solo en este ordenador, nunca al repositorio ni a la web
+pribatua/
