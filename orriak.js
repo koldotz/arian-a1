@@ -157,7 +157,7 @@
     else {
       h += (b.p || []).map(function(p){ return '<p lang="es">' + inl(p) + '</p>'; }).join('');
       if (b.taula) h += '<div class="or-taula"><table><tr>' + b.taula.cols.map(function(c){ return '<th>' + inl(c) + '</th>'; }).join('') + '</tr>' +
-        b.taula.rows.map(function(r){ return '<tr>' + r.map(function(c){ return '<td>' + inl(c) + '</td>'; }).join('') + '</tr>'; }).join('') + '</table></div>';
+        b.taula.rows.map(function(r){ return '<tr>' + r.map(function(c){ return '<td>' + inl(c).replace(/(^|[\s(])-(?=[a-z(])/g, '$1\u2011') + '</td>'; }).join('') + '</tr>'; }).join('') + '</table></div>';   // el guion de un sufijo no se separa de él al partirse la celda
     }
     return h + '</div>';
   }

@@ -258,6 +258,176 @@
           _oh:'Es un modelo: cuenta tu día y tus planes.' }
   };
 
+  /* ── 8 · Osasuna ─────────────────────────────────────────────────────── */
+  E['ika-08'] = {
+    At1: { '1':'burua', '2':'belauna', '3':'belarria', '4':'bizkarra', '5':'eskua', '6':'oina', '7':'eztarria', '8':'sorbalda', '9':'begia', '10':'sudurra' },
+    At2: { '1':'buruko', '2':'belauneko', '3':'eztarriko', '4':'tripako', '5':'belarriko', '6':'bizkarreko', '7':'hanketako', '8':'haginetako' },
+    At3: { '1':M('Ez daukat eztarriko minik.'), '2':M('Ez dauka bizkarreko minik.'), '3':M('Ez daukagu belarriko minik.'), '4':M('Ez daukate haginetako minik.') },
+    At4: { '1':'Ez', '2':'Bai', '3':'Ez', '4':'Ez', '5':'Bai' },
+
+    A1: { '100':M('Ordu batean.'), '300':M('Hiruretan.'), '400':M('Lauretan.'), '600':M('Seietan.'), '1000':M('Hamarretan.'), '530':M('Bost eta erdietan.'), '615':M('Sei eta laurdenetan.') },
+    A2: { '1':'Sukarra daukat', '2':'Eztula daukat', '3':'Zorabioa daukat', '4':'Mukiak dauzkat', '5':'Zauria daukat', '6':'Erredura daukat' },
+    A3: { '1':'Ireki ahoa', '2':'Hartu arnasa', '3':'Etzan', '4':'Eseri', '5':'Hartu atseden', '6':'Hartu xarabe hau' },
+    A4: { '1':M('Arratsaldeko lauretan dauka. / Arratsaldeko lauretan. / Lauretan.'), '2':M('Sukarra, eztula eta mukiak dauzka. / Sukarra, eztula eta mukiak.'), '3':M('Gripea dauka. / Gripea.'),
+          '4':M('Ur asko edan behar du. / Ur asko.'), '5':M('Egunean hirutan hartu behar ditu. / Egunean hirutan.') },
+
+    B1: { '1':'badaukazu', '2':'badaukat', '3':'badauka', '4':'baduzu', '5':'badu', '6':'bazaude', '7':'badago', '8':'bazaio' },
+    B2: { '1':'hartu pastilla bat', '2':'jarri izotza', '3':'hartu xarabea', '4':'hartu atseden', '5':'joan medikuarengana', '6':'jarri ur hotza' },
+    B3: { '1':'medikuarengana', '2':'gurasoengana', '3':'Uxuerengana', '4':'Julenengana', '5':'lagunarengana', '6':'lagunengana', '7':'amarengana', '8':'aitona-amonengana' },
+    B4: { '1':'bihurrituta', '2':'hautsita', '3':'erreta', '4':'handituta', '5':'irekita', '6':'ubelduta', '7':'urratuta', '8':'gorrituta' },
+    B5: { '1':M('Bizikletatik erori da.'), '2':M('Urratuta dauka. / Urratuta.'), '3':M('Ez, ez dauka hausturarik. / Ez.'), '4':M('Medikuarengana joango dira. / Medikuarengana.'), '5':M('Aitarengana eramango dute. / Aitarengana.') },
+
+    C1: { '1':'jaikitzen', '2':'gosaltzen', '3':'bazkaltzen', '4':'afaltzen', '5':'oheratzen', '6':'joaten', '7':'jaten', '8':'hartzen' },
+    C2: { '1':'naiz', '2':'dut', '3':'da', '4':'du', '5':'gara', '6':'dugu' },
+    C3: { '1':M('Ez naiz goiz jaikitzen.'), '2':M('Ez dut egunero fruta jaten. / Ez dut egunero frutarik jaten.'), '3':M('Ez gara askotan mendira joaten.'), '4':M('Ez du erretzen.') },
+    C4: { '1':'egunero', '2':'batzuetan', '3':'inoiz ez', '4':'askotan', '5':'gutxitan', '6':'beti' },
+    C5: { '1':M('Zazpietan jaikitzen da. / Zazpietan.'), '2':M('Oinez joaten da. / Oinez.'), '3':M('Astean hirutan egiten du. / Astean hirutan.'), '4':M('Ez, ez du inoiz erretzen. / Ez du inoiz erretzen. / Ez.'),
+          '5':M('Hamaiketan oheratzen da. / Hamaiketan.'), _oh:'La 6 es sobre ti: no tiene una única respuesta.' },
+
+    E1: { '1':M('Bizkarreko min handia dauka. / Bizkarreko mina dauka. / Bizkarreko mina.'), '2':M('Ez, inoiz ez. / Ez, ez du inoiz kirolik egiten. / Ez.'), '3':M('Egun osoa eserita egoten da. / Eserita egoten da. / Eserita.'),
+          '4':M('Kirola egin behar du. / Kirola.'), '5':M('Min handia badauka, egunean bat. / Min handia badauka.') },
+    E2: { '1':'-ko', '2':'-etako', '3':'-rik', '4':'-etan', '5':'badaukazu', '6':'-arengana', '7':'-ta', '8':'naiz', '9':'erretzen', '10':'Batzuetan' },
+    E3: NIREA,
+    E4: { t:M('Normalean zazpi eta erdietan jaikitzen naiz, eta ondo gosaltzen dut. Lanera autobusean joaten naiz. Astean bitan kirola egiten dut, eta ez dut inoiz erretzen. Nire aholkua: buruko mina badaukazu, hartu atseden eta edan ur asko.'),
+          _oh:'Es un modelo: cuenta tus costumbres y da tu consejo.' }
+  };
+
+  /* ── 9 · Birziklatu eta aurreztu ─────────────────────────────────────── */
+  E['ika-09'] = {
+    At1: { '1':'beirazko / beirazkoa', '2':'paperezko / paperezkoa', '3':'kartoizko / kartoizkoa', '4':'aluminiozko / aluminiozkoa' },
+    At2: { '1':'paperezkoa', '2':'beirazkoa', '3':'aluminiozkoa', '4':'kartoizkoa', '5':'plastikozkoa', '6':'paperezkoa' },
+    At3: { '1':'daiteke', '2':'daitezke', '3':'daitezke', '4':'daiteke', '5':'daitezke', '6':'daiteke' },
+    At4: { '1':'horira', '2':'urdinera', '3':'berdera', '4':'garbigunera', '5':'horira', '6':'urdinera', '7':'garbigunera', '8':'horira' },
+
+    A1: { '1':'ezazu', '2':'itzazu', '3':'zaitez', '4':'ezazu', '5':'itzazu', '6':'zaitez' },
+    A2: { '1':'ezazue', '2':'itzazue', '3':'zaitezte', '4':'ezazue', '5':'itzazue', '6':'zaitezte' },
+    A3: { '1':M('Txorrota ixteko esan du.'), '2':M('Hondakinak sailkatzeko esan du.'), '3':M('Paperak jasotzeko esan du.'), '4':M('Ura aurrezteko esan du.'), '5':M('Argiak itzaltzeko esan du.') },
+    A4: { '1':'dezaket', '2':'ditzaket', '3':'dezakegu', '4':'ditzakegu', '5':'dezakezu', '6':'ditzakezue' },
+
+    B1: { '1':'erretzea', '2':'bainatzea', '3':'botatzea', '4':'piztea', '5':'eramatea', '6':'sartzea' },
+    B2: { '1':'da', '2':'dira', '3':'da', '4':'dira', '5':'da', '6':'dira' },
+    B3: { '1':'ados dago', '2':'ez dago ados', '3':'ados dago', '4':'ez dago ados', '5':'ados dago', '6':'ez dago ados' },
+    B4: { '1':M('Gure herriko parkean dago. / Herriko parkean. / Parkean.'), '2':M('Ez, debekatuta dago. / Ez, ezin dira sartu. / Ez.'), '3':M('Lorategietan ezin dira sartu. / Lorategietan.'),
+          '4':M('Ez, ez dago ados. / Ez.'), _oh:'La 5 es tu opinión: no tiene una única respuesta.' },
+
+    C1: { '1':'denean', '2':'direnean', '3':'garenean', '4':'duenean', '5':'dugunean', '6':'ditugunean' },
+    C2: { '1':'denean', '2':'ditugunean', '3':'direnean', '4':'dugunean', '5':'garenean' },
+    C3: { '1':M('Erosketak egiten ditugunean, poltsak eramaten ditugu.'), '2':M('Afaria bukatzen dugunean, platerak garbitzen ditugu.'), '3':M('Gelatik ateratzen denean, argia itzaltzen du.'),
+          '4':M('Umeak etxera etortzen direnean, askaria jaten dute.') },
+    C4: { '1':M('Hondakinak sailkatzen dituzte. / Plastikoa, papera eta beira. / Hondakinak.'), '2':M('Etxeko poltsak eramaten dituzte. / Etxeko poltsak.'),
+          '3':M('Gelatik ateratzen direnean itzaltzen dute. / Gelatik ateratzen direnean.'), '4':M('Bizikletaz joaten da. / Bizikletaz.'), _oh:'La 5 es sobre ti: no tiene una única respuesta.' },
+
+    E1: { '1':'edukiontzi horira', '2':'edukiontzi urdinera', '3':'edukiontzi berdera', '4':'garbigunera', '5':'edukiontzi horira', '6':'edukiontzi urdinera', '7':'garbigunera', '8':'edukiontzi berdera' },
+    E2: { '1':'-zko', '2':'-ezko', '3':'daitezke', '4':'ezazu', '5':'itzazu', '6':'zaitez', '7':'-tzeko', '8':'-tzea', '9':'ustez', '10':'denean' },
+    E3: NIREA,
+    E4: { t:M('Gure etxepean: debekatuta dago zaborra lurrean uztea. Sailka itzazue hondakinak. Ezin da igogailuan erre. Itzal ezazue argia, mesedez.'),
+          _oh:'Es un modelo: escribe las normas de tu casa, tu portal o tu parque.' }
+  };
+
+  /* ── 10 · Non bizi nahi duzu? ────────────────────────────────────────── */
+  E['ika-10'] = {
+    At1: { '1':'handiena', '2':'txikiena', '3':'politena', '4':'zaharrena', '5':'lasaiena', '6':'jendetsuena', '7':'onena', '8':'txarrena' },
+    At2: { '1':'rik / hiririk', '2':'rik / herririk', '3':'rik / kalerik', '4':'rik / jatetxerik', '5':'ik / hotelik', '6':'rik / hondartzarik', '7':'rik / museorik', '8':'ik / autobusik' },
+    At3: { '1':'ondoen', '2':'onena', '3':'gehien', '4':'gutxien', '5':'txarrena', '6':'okerren' },
+    At4: { '1':M('Bilbo da. / Bilbo.'), '2':M('Guggenheim da. / Guggenheim.'), '3':M('Erdigunean daude, ibaiaren ondoan. / Erdigunean daude. / Erdigunean.'), '4':M('Abuztuan izaten dira. / Abuztuan.'),
+           _oh:'La 5 es sobre tu pueblo: no tiene una única respuesta.' },
+
+    A1: { '1':M('Hiria herria baino zaratatsuagoa da.'), '2':M('Herria hiria baino lasaiagoa da.'), '3':M('Paris Donostia baino garestiagoa da.'), '4':M('Trena autobusa baino azkarragoa da.'), '5':M('Negua uda baino hotzagoa da.') },
+    A2: { '1':'hobea', '2':'hobeto', '3':'txarragoa', '4':'gehiago', '5':'gutxiago', '6':'okerrago' },
+    A3: { '1':'hainbeste', '2':'hain', '3':'hainbeste', '4':'hain', '5':'hainbeste', '6':'hain' },
+    A4: { '1':'Bai', '2':'Ez', '3':'Ez', '4':'Bai', '5':'Ez' },
+
+    B1: { '1':'dela', '2':'direla', '3':'dagoela', '4':'duela', '5':'dudala', '6':'dugula', '7':'dutela', '8':'daukala' },
+    B2: { '1':M('Hiria garestia dela uste dut.'), '2':M('Herrian lan gutxi dagoela uste dut.'), '3':M('Hiriek zerbitzu gehiago dutela uste dut.'), '4':M('Kostaldeko herriak politak direla uste dut.'),
+          '5':M('Auzo honek bizi-kalitate ona duela uste dut.') },
+    B3: { '1':'dela', '2':'dela', '3':'direla', '4':'duela', '5':'duela', '6':'garela' },
+    B4: { '1':M('Auzoa lasaia dela, baina zerbitzu gutxi dagoela. / Auzoa lasaia dela.'), '2':M('Ez dagoela lanik, eta etxebizitzak garestiegiak direla. / Ez dagoela lanik.'), '3':M('Osasun-zentroa urrutiegi dagoela.'),
+          '4':M('Auzoak bizi-kalitate ona duela.'), _oh:'La 5 es tu opinión: no tiene una única respuesta.' },
+
+    C1: { '1':'zait', '2':'zaizkit', '3':'zait', '4':'zaizkit', '5':'zait', '6':'zait' },
+    C2: { '1':'bidaiatzea', '2':'bisitatzea', '3':'ezagutzea', '4':'ikustea', '5':'egotea', '6':'ibiltzea', '7':'jatea', '8':'irakurtzea' },
+    C3: { '1':M('Mendia ez da hondartza baino aspergarriagoa.'), '2':M('Trena ez da autoa baino garestiagoa.'), '3':M('Hirian ez dago herrian baino jende gehiago.'), '4':M('Hotela ez da kanpina baino merkeagoa.') },
+    C4: { '1':M('Abuztuan dituzte. / Abuztuan.'), '2':M('Hiriak bisitatzea gustatzen zaio. / Hiriak bisitatzea.'), '3':M('Mendia nahiago du. / Mendia.'), '4':M('Mendia lasaiagoa dela uste du. / Mendia lasaiagoa dela.'),
+          '5':M('Pirinioetara joango dira. / Pirinioetara.'), _oh:'La 6 es sobre ti: no tiene una única respuesta.' },
+
+    E1: { '1':'Lizarbe', '2':'Aranbel', '3':'Otaño', '4':'Aranbel', '5':'Lizarbe', '6':'Otaño' },
+    E2: { '1':'-rik', '2':'onena', '3':'baino', '4':'hobeto', '5':'hainbeste', '6':'dela', '7':'dagoela', '8':'ez da', '9':'zait', '10':'nahiago' },
+    E3: NIREA,
+    E4: { t:M('Ni herri txiki batean bizi naiz. Nire herria hiria baino lasaiagoa eta merkeagoa da, baina zerbitzu gutxiago daude. Uste dut hemen hobeto bizi garela. Herriko lekurik politena plaza da. Oporretan, mendira joatea gustatzen zait.'),
+          _oh:'Es un modelo: habla de tu pueblo o de tu ciudad.' }
+  };
+
+  /* ── 11 · Lan bila ───────────────────────────────────────────────────── */
+  E['ika-11'] = {
+    At1: { '1':'artzaina', '2':'zurgina', '3':'okina', '4':'argiketaria', '5':'liburuzaina', '6':'soroslea', '7':'nagusia', '8':'harreragilea' },
+    At2: { '1':'dakit', '2':'dakizkit', '3':'dakizu', '4':'dakizki', '5':'dakigu', '6':'dakizkite' },
+    At3: { '1':'gidatzen', '2':'josten', '3':'pintatzen', '4':'konpontzen', '5':'idazten', '6':'irakasten', '7':'margotzen', '8':'egiten' },
+    At4: { '1':'Ez', '2':'Bai', '3':'Ez', '4':'Bai', '5':'Ez' },
+
+    A1: { '1':'okindegirako', '2':'tabernarako', '3':'jatetxerako', '4':'ospitalerako', '5':'supermerkaturako', '6':'lanerako', '7':'eskoletarako', '8':'okindegietarako' },
+    A2: { '1':'sukaldaria', '2':'soroslea', '3':'liburuzaina', '4':'okina', '5':'mekanikaria', '6':'erizainak', '7':'harreragilea', '8':'begiraleak' },
+    A3: { '1':'diot', '2':'dizkiot', '3':'dit', '4':'dizkigu', '5':'didazu', '6':'diogu', '7':'didate', '8':'dizkiote' },
+    A4: { '1':M('Sukaldari laguntzailea behar dute. / Sukaldari laguntzailea.'), '2':M('Jatetxe baterako. / Jatetxerako.'), '3':M('Goizez, astelehenetik ostiralera. / Astelehenetik ostiralera, goizez. / Goizez.'),
+          '4':M('Bai, beharrezkoa da. / Bai.'), '5':M('1.300 € hilean. / Mila eta hirurehun hilean. / 1.300 €') },
+
+    B1: { '1':'den', '2':'diren', '3':'dudan', '4':'duzun', '5':'dugun', '6':'dakien', '7':'dituzun', '8':'zaren' },
+    B2: { '1':M('Non bizi zaren galdetu du.'), '2':M('Zer ikasketa dituzun galdetu du.'), '3':M('Lana nolakoa den galdetu du. / Nolakoa den lana galdetu du.'), '4':M('Elkarrizketa zer ordutan den galdetu du. / Zer ordutan den elkarrizketa galdetu du.') },
+    B3: { '1':M('Ea esperientzia duzun galdetu du.'), '2':M('Ea ingelesa dakizun galdetu du.'), '3':M('Ea arduratsua zaren galdetu du.'), '4':M('Ea lanpostua gustukoa duzun galdetu du.') },
+    B4: { '1':'ordenatua', '2':'irudimentsua', '3':'komunikatzailea', '4':'trebea', '5':'langilea' },
+    B5: { '1':M('Sagardotegi batean egin du. / Sagardotegi batean.'), '2':M('Ea esperientzia duen, ea ingelesa dakien eta ea asteburuetan lan egin dezakeen. / Ea esperientzia duen.'), '3':M('Bi urteko esperientzia du. / Bi urtekoa. / Bi urte.'),
+          '4':M('Bai, lan egin dezake. / Bai.'), '5':M('Datorren astean deituko dio. / Datorren astean.') },
+
+    C1: { '1':'aitarengandik', '2':'amarengandik', '3':'aitonarengandik', '4':'gurasoengandik', '5':'aitona-amonengandik', '6':'Enararengandik', '7':'Unaxengandik', '8':'lagunarengandik' },
+    C2: { '1':'dut', '2':'dit', '3':'diot', '4':'digu', '5':'dugu', '6':'dio' },
+    C3: { '1':'alde ona', '2':'alde txarra', '3':'alde ona', '4':'alde txarra', '5':'alde txarra', '6':'alde ona', '7':'alde txarra', '8':'alde ona' },
+    C4: { '1':M('Okina da. / Okina.'), '2':M('Bere amarengandik ikasi du. / Amarengandik.'), '3':M('Goizeko lauretan hasten da. / Goizeko lauretan. / Lauretan.'), '4':M('Oso goiz jaiki behar duelako.'),
+          '5':M('Arratsaldez ez du lanik egiten, eta bezeroak oso jatorrak dira. / Arratsaldez ez du lanik egiten.'), _oh:'La 6 es sobre ti: no tiene una única respuesta.' },
+
+    E1: { '1':M('Erizaintzan diplomatua da. / Erizaintza.'), '2':M('Hiru hizkuntza dakizki. / Hiru dakizki. / Hiru.'), '3':M('Ospitale batean lan egin du. / Ospitale batean.'), '4':M('Bai, badauka. / Bai.'),
+          '5':M('Lanaldi osoa nahi du, goizez. / Lanaldi osoa, goizez. / Lanaldi osoa.') },
+    E2: { '1':'dakit', '2':'dakizkit', '3':'-tzen', '4':'-rako', '5':'diot', '6':'dit', '7':'dituzun', '8':'Ea', '9':'-rengandik', '10':'dit' },
+    E3: NIREA,
+    E4: { t:M('Kaixo! Enara naiz, eta bulegari-lana nahi dut. Hiru hizkuntza dakizkit: euskara, gaztelania eta ingelesa. Bi urteko esperientzia dut hotel batean. Arduratsua eta ordenatua naiz, eta jendearekin ondo moldatzen naiz. Gidabaimena daukat, eta goizez edo arratsaldez lan egin dezaket.'),
+          _oh:'Es un modelo: cambia el trabajo y los datos por los tuyos.' }
+  };
+
+  /* ── 12 · Asteburuko planak ──────────────────────────────────────────── */
+  E['ika-12'] = {
+    At1: { '1':'astelehenean', '2':'astelehenetan', '3':'ostiralean', '4':'ostiraletan', '5':'igandean', '6':'igandeetan', '7':'larunbatetan', '8':'asteartean' },
+    At2: { '500700':M('Bostetatik zazpietara.'), '600800':M('Seietatik zortzietara.'), '9001000':M('Bederatzietatik hamarretara.'), '400600':M('Lauretatik seietara.'), '11001200':M('Hamaiketatik hamabietara.'),
+           '700900':M('Zazpietatik bederatzietara.') },
+    At3: { '1':'ostiralean', '2':'Astelehenetan', '3':'Igandeetan', '4':'larunbatean', '5':'Astearteetan', '6':'ostegunean' },
+    At4: { '1':M('Astelehenetan, bederatzietatik hamarretara. / Astelehenetan.'), '2':M('Seietatik zortzietara.'), '3':M('Zinema dago. / Zinema.'), '4':M('Plazan da. / Plazan.'),
+           _oh:'La 5 es sobre ti: no tiene una única respuesta.' },
+
+    A1: { '1':'autobusez', '2':'trenez', '3':'autoz', '4':'taxiz', '5':'bizikletaz', '6':'motoz', '7':'hegazkinez', '8':'itsasontziz' },
+    A2: { '1':M('Urtarrilaren 1ean. / Urtarrilaren batean.'), '2':M('Abuztuaren 15ean. / Abuztuaren hamabostean.'), '3':M('Urriaren 12an. / Urriaren hamabian.'), '4':M('Abenduaren 25ean. / Abenduaren hogeita bostean.'),
+          '5':M('Uztailaren 6an. / Uztailaren seian.') },
+    A3: { '1':'Donostiaraino', '2':'Zarautzeraino', '3':'Getariaraino', '4':'Orioraino', '5':'Andoaineraino', '6':'Usurbileraino', '7':'Zumaiaraino', '8':'Lasarteraino' },
+    A4: { '1':M('Uztailaren 6an, larunbatean. / Uztailaren 6an.'), '2':M('Trenez joango dira. / Trenez.'), '3':M('Busturiaraino joango dira. / Busturiaraino.'), '4':M('Hondartzan bazkalduko dute. / Hondartzan.'),
+          '5':M('Autobusez itzuliko dira. / Autobusez.') },
+
+    B1: { '1':'joateko', '2':'ikusteko', '3':'jateko', '4':'dantzatzeko', '5':'bidaiatzeko', '6':'irteteko', '7':'hartzeko', '8':'eskiatzeko' },
+    B2: { '1':M('Ez daukat dantzatzeko gogorik.'), '2':M('Ez daukat ikasteko asmorik.'), '3':M('Ez daukagu zinemara joateko gogorik.'), '4':M('Ez dauka bidaiatzeko asmorik.') },
+    B3: { '1':'badu', '2':'badago', '3':'baduzu', '4':'bagaude', '5':'badu', '6':'badugu' },
+    B4: { '20':M('Ehuneko hogei.'), '50':M('Ehuneko berrogeita hamar.'), '75':M('Ehuneko hirurogeita hamabost.'), '10':M('Ehuneko hamar.'), '100':M('Ehuneko ehun.') },
+    B5: { '1':M('Lagunekin irtetea. / Lagunekin irten.'), '2':M('% 25. / Ehuneko hogeita bost.'), '3':M('Etxean geratzea.'), '4':M('Zinemara joateko asmoa dute. / Zinemara joango dira.'),
+          _oh:'La 5 es sobre ti: no tiene una única respuesta.' },
+
+    C1: { '1':'nintzen', '2':'zinen', '3':'zen', '4':'zineten', '5':'ziren' },
+    C2: { '1':'nuen', '2':'zenuen', '3':'zuen', '4':'zenuten', '5':'zuten' },
+    C3: { '1':'nintzen', '2':'naiz', '3':'genuen', '4':'gara', '5':'zuen', '6':'ziren' },
+    C4: { '1':M('Txikitan liburu bat irakurtzen nuen.'), '2':M('Txikitan hondartzara joaten ginen.'), '3':M('Txikitan goiz jaikitzen zen.'), '4':M('Txikitan kartetan jokatzen zuten.') },
+    C5: { '1':M('Ez, ez zuen telebistarik. / Ez.'), '2':M('Plazara joaten zen, lagunekin. / Plazara.'), '3':M('Pilotalekuan jokatzen zuten. / Pilotalekuan.'), '4':M('Oinez joaten ziren. / Oinez.'),
+          '5':M('Telebista ikusten du. / Telebista ikusi.'), _oh:'La 6 es sobre ti: no tiene una única respuesta.' },
+
+    E1: { '1':'Bai', '2':'Ez', '3':'Bai', '4':'Ez', '5':'Bai', '6':'Ez' },
+    E2: { '1':'Astearteetan', '2':'-etara', '3':'-ez', '4':'-aren', '5':'-raino', '6':'gogoa', '7':'gogorik', '8':'badu', '9':'nintzen', '10':'genuen' },
+    E3: NIREA,
+    E4: { t:M('Datorren larunbatean, uztailaren 20an, txango bat egiteko asmoa daukat: Donostiatik Orioraino, oinez. Trenez itzuliko naiz. Eguraldi txarra egiten badu, zinemara joango naiz. Txikitan, asteburuetan mendira joaten nintzen gurasoekin, eta oso pozik egoten nintzen.'),
+          _oh:'Es un modelo: cuenta tu plan y tu recuerdo.' }
+  };
+
   window.ERANTZUNAK = window.ERANTZUNAK || {};
   window.ERANTZUNAK.ikasgaiak = E;
 })();

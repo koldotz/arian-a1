@@ -75,7 +75,7 @@ export default async function(t){
   await A.go(t.base + '/index.html', 1500);
   const home = JSON.parse(await A.ev(`JSON.stringify({ arian: document.querySelector('.book[data-liburua="arian"] .prog .t').textContent, bak: document.querySelector('.book[data-liburua="bakarka1"] .prog .t').textContent,
     u4: document.querySelector('.unit-l[href="arian.html#aro-04"] .p').textContent, units: document.querySelectorAll('.unit-l').length })`));
-  t.ok(home.arian === '6 / 457' && home.bak === '0 / 144' && home.u4 === '6/37' && home.units === 32, 'portada: progreso de cada libro y de cada unidad (' + home.arian + ' · ' + home.bak + ')');
+  t.ok(home.arian === '6 / 457' && home.bak === '0 / 144' && home.u4 === '6/37' && home.units === 37, 'portada: progreso de cada libro y de cada unidad (' + home.arian + ' · ' + home.bak + ')');
 
   // ── con perfil: sube a la nube y llega a otro dispositivo
   await A.go(t.base + '/arian.html#aro-04', 2600);
