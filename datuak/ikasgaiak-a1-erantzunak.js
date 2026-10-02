@@ -125,6 +125,40 @@
           _oh:'Es un modelo: cambia los datos por los de tu familia.' }
   };
 
+  /* ── 4 · Etxe berria ─────────────────────────────────────────────────── */
+  E['ika-04'] = {
+    At1: { '1':'daukat', '2':'dauzkat', '3':'dauka', '4':'dauzka', '5':'daukagu', '6':'dauzkagu', '7':'daukazu', '8':'dauzkate' },
+    At2: { '1':'dauka', '2':'dauzka', '3':'daukat', '4':'dauzkazue', '5':'daukate', '6':'dauzkagu' },
+    At3: { '1':M('Etxeak ez dauka balkoirik.'), '2':M('Etxeak ez dauka igogailurik.'), '3':M('Nik ez daukat telebistarik.'), '4':M('Guk ez daukagu terrazarik.'), '5':M('Etxeak ez dauka berogailurik.') },
+    At4: { '1':'Ez', '2':'Bai', '3':'Ez', '4':'Ez', '5':'Bai', '6':'Ez' },
+
+    A1: { '100':'ehun', '200':'berrehun', '300':'hirurehun', '500':'bostehun', '700':'zazpiehun', '900':'bederatziehun', '1000':'mila', '150':'ehun eta berrogeita hamar',
+          '420':'laurehun eta hogei', '1200':'mila eta berrehun / mila berrehun' },
+    A2: { '1':'dut', '2':'ditut', '3':'duzu', '4':'ditugu', '5':'du', '6':'dituzue', '7':'dute', '8':'dituzte' },
+    A3: { '1':M('Hiru logela dauzka. / Hiru dauzka. / Hiru.'), '2':M('Bederatziehun eta berrogeita hamar balio du. / Bederatziehun eta berrogeita hamar. / 950 € / 950'),
+          '3':M('Hondartzatik hurbil dago. / Hondartzatik hurbil.'), '4':M('Ez, ez dauka igogailurik. / Ez, ez dauka. / Ez.'), '5':M('Pisua dago altzariz jantzita. / Pisua.') },
+    A4: { '1':M('Ez dut balkoirik behar.'), '2':M('Ez dugu igogailurik behar.'), '3':M('Ez dut terrazarik nahi.'), '4':M('Ez dute berogailurik behar.') },
+
+    B1: { '1':'handiagoa', '2':'txikiagoa', '3':'merkeagoa', '4':'garestiagoa', '5':'berriagoa', '6':'zaharragoa', '7':'argitsuagoa', '8':'lasaiagoa', '9':'hurbilago', '10':'urrunago' },
+    B2: { '1':'Bai', '2':'Ez', '3':'Bai', '4':'Ez', '5':'Bai' },
+    B3: { '1':'merkeagoa', '2':'gehiago', '3':'gutxiago', '4':'berriagoa', '5':'ilunagoa', '6':'lasaiagoa' },
+    B4: { '1':'handiagoa', '2':'garestiagoak', '3':'hurbilago', '4':'logela gehiago', '5':'leiho gutxiago', '6':'merkeagoa' },
+
+    C1: { '1':'sukaldean', '2':'logelan', '3':'egongelan', '4':'bainugelan', '5':'sukaldean', '6':'logelan', '7':'bainugelan', '8':'egongelan', '9':'sukaldean', '10':'logelan' },
+    C2: { '1':'dago', '2':'daude', '3':'dago', '4':'daude', '5':'dago', '6':'daude' },
+    C3: { '1':M('Hozkailu bat behar dut. / Hozkailua behar dut.'), '2':M('Aulkiak behar ditut. / Aulki bat behar dut.'), '3':M('Garbigailu bat behar dugu. / Garbigailua behar dugu.'),
+          '4':M('Platerak behar ditut.'), '5':M('Mahai bat behar dugu. / Mahaia behar dugu.') },
+    C4: { '1':M('Sofa bat, bi besaulki eta telebista daude. / Sofa bat, bi besaulki eta telebista.'), '2':M('Ez, ez dago mikrouhin-laberik. / Ez, ez dago. / Ez.'), '3':M('Bi besaulki daude. / Bi daude. / Bi.'),
+          '4':M('Ez, ez dauka bainuontzirik. / Ez, dutxa dauka. / Ez.'), _oh:'La 5 es sobre tu dormitorio: no tiene una única respuesta.' },
+
+    E1: { '1':M('A pisua. / Pisua. / Getxoko pisua. / A.'), '2':M('Bi bainugela dauzka. / Bi dauzka. / Bi.'), '3':M('Zarautzen dago, hondartzatik hurbil. / Zarautzen dago. / Zarautzen.'),
+          '4':M('Ez, ez dauka garajerik. / Ez, ez dauka. / Ez.'), '5':M('Zazpiehun balio du. / Zazpiehun. / 700 € / 700'), '6':M('Pisua da handiagoa. / A pisua. / Pisua. / A.') },
+    E2: { '1':'dauzkat', '2':'-rik', '3':'dut', '4':'ditut', '5':'bostehun', '6':'du', '7':'merkeagoa', '8':'gehiago', '9':'sukaldean', '10':'behar' },
+    E3: NIREA,
+    E4: { t:M('Pisua alokatzeko, erdigunean. Bi logela, egongela argitsua, sukaldea eta bainugela dauzka. Balkoi bat badauka, baina ez dauka garajerik. Altzariz jantzita dago. Tren-geltokitik hurbil. 750 € hilean.'),
+          _oh:'Es un modelo: cambia los datos por los de tu piso.' }
+  };
+
   window.ERANTZUNAK = window.ERANTZUNAK || {};
   window.ERANTZUNAK.ikasgaiak = E;
 })();

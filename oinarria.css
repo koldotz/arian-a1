@@ -342,6 +342,7 @@ p.itn{font-family:var(--f-ui); font-size:12.5px; color:var(--muted); line-height
 .or-kutxa span{font-family:var(--f-mono); font-size:12.5px; color:var(--sea); border:1px dashed var(--sea); border-radius:3px; padding:1px 8px}
 .or-tes{border-left:2px solid var(--sea); background:var(--sea-soft); border-radius:0 var(--r) var(--r) 0; padding:9px 13px; margin:0 0 12px}
 .or-tes p{font-size:16px; line-height:1.55}
+.or-tes p + p{margin-top:8px; padding-top:8px; border-top:1px dashed var(--line-strong)}
 .or-it.or-gal{align-items:baseline; gap:6px 10px}
 .or-it.or-gal .gq{flex:1 1 15em; min-width:0; font-size:16px; line-height:1.9}
 #app-koadernoa .or-it.or-gal .gq .gapf{flex:none; width:8.5em; min-width:0; margin:0 3px}

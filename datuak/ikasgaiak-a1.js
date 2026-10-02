@@ -583,6 +583,180 @@
                'Contar hasta 100 y decir la edad.', 'Dar y pedir datos personales: estado civil, hijos y aficiones.'] } ] }
   ] });
 
+  /* ── 4 · Etxe berria (mismo temario que Arian A1, unidad 4) ──────────── */
+  var EDUKI = ['daukat', 'daukazu', 'dauka', 'daukagu', 'dauzkat', 'dauzka', 'dauzkagu', 'dauzkate'];
+  U.push({ id:'ika-04', n:4, eu:'Etxe berria',
+    sarrera:'La casa: sus partes, lo que tiene, lo que cuesta, cómo es comparada con otra y qué muebles hay en cada habitación. Sigue el temario de la unidad 4 de *Arian A1* (85–102. or.) y usa solo sus palabras y sus formas (y las de las unidades anteriores); las frases, los diálogos y los ejercicios están escritos de nuevo, no son los del libro. Todavía no tiene audio.',
+    atalak:[
+
+    { id:'At', k:'1', ref:['arian', '86–87'],
+      lan:'**Etxeko gelak.** Las partes de la casa y el verbo *eduki*: **daukat** con una cosa, **dauzkat** con varias. En preguntas y negaciones el nombre lleva **-(r)ik**.',
+      lot:[[12, 'Verbos sintéticos'], [15, 'La negación y el partitivo']],
+      ar:[
+        { t:'hiz', iz:'Etxea · la casa por partes', l:[
+          ['sukaldea', 'cocina'], ['egongela', 'sala de estar'], ['jangela', 'comedor'], ['logela', 'dormitorio'], ['bainugela', 'cuarto de baño'], ['komuna', 'váter, aseo'],
+          ['langela', 'despacho'], ['sarrera', 'entrada'], ['balkoia', 'balcón'], ['terraza', 'terraza'], ['garajea', 'garaje'], ['trastelekua', 'trastero'], ['ganbara', 'desván'],
+          ['despentsa', 'despensa'], ['lorategia', 'jardín'], ['patioa', 'patio'], ['igogailua', 'ascensor'], ['solairua', 'piso, planta'], ['atea', 'puerta'], ['leihoa', 'ventana'],
+          ['berogailua', 'calefacción, radiador'], ['tximinia', 'chimenea'] ] },
+        { t:'elk', iz:'Elkarrizketa · la casa nueva', l:[
+          ['Izaro', 'Nolakoa da zure etxe berria, Hodei?', '¿Cómo es tu casa nueva, Hodei?'],
+          ['Hodei', 'Txikia da, baina oso argitsua. Hiru logela dauzka, eta bainugela bat.', 'Es pequeña, pero muy luminosa. Tiene tres dormitorios y un baño.'],
+          ['Izaro', 'Eta sukaldea? Handia da?', '¿Y la cocina? ¿Es grande?'],
+          ['Hodei', 'Ez, sukalde txikia dauka, baina egongela handia da.', 'No, tiene una cocina pequeña, pero la sala es grande.'],
+          ['Izaro', 'Badauka balkoirik?', '¿Tiene balcón?'],
+          ['Hodei', 'Bai, balkoi bat badauka. Baina ez dauka garajerik.', 'Sí, tiene un balcón. Pero no tiene garaje.'],
+          ['Izaro', 'Eta igogailurik?', '¿Y ascensor?'],
+          ['Hodei', 'Ez, eta bosgarren solairuan bizi naiz!', '¡No, y vivo en el quinto piso!'] ] },
+        { t:'gram', iz:'Eduki · tener',
+          p:['**eduki** es *tener*, y cambia según se tenga una cosa o varias: **Etxe bat daukat** · **Bi logela dauzkat**.',
+             'En las preguntas y en las negaciones el nombre lleva **-(r)ik** y el verbo va en singular: **Badauka trastelekurik?** — **Ez, ez dauka trastelekurik**.'],
+          taula:{ cols:['nork', 'una cosa', 'varias cosas'], rows:[['nik', 'daukat', 'dauzkat'], ['zuk', 'daukazu', 'dauzkazu'], ['hark', 'dauka', 'dauzka'], ['guk', 'daukagu', 'dauzkagu'], ['zuek', 'daukazue', 'dauzkazue'], ['haiek', 'daukate', 'dauzkate']] } },
+
+        { n:'1', m:'tx', zer:'Osatu · la forma de *eduki*', en:'Fíjate en si se tiene una cosa o varias. Cada forma se usa una vez.', it:L(1,8), kutxa:EDUKI,
+          gal:['Nik etxe txiki bat ___.', 'Nik bi logela ___.', 'Gure etxeak terraza handi bat ___.', 'Etxe horrek lau leiho ___.', 'Guk garaje bat ___.', 'Guk hiru bainugela ___.', 'Zuk balkoi bat ___?', 'Uxuek eta Julenek bi komun ___.'] },
+        { n:'2', m:'auk', zer:'Aukeratu · una cosa o varias',
+          it:[['1', ['dauka', 'dauzka']], ['2', ['dauka', 'dauzka']], ['3', ['daukat', 'dauzkat']], ['4', ['daukazue', 'dauzkazue']], ['5', ['daukate', 'dauzkate']], ['6', ['daukagu', 'dauzkagu']]],
+          gal:['Etxeak sukalde bat ___.', 'Etxeak hiru logela ___.', 'Nik ordenagailu bat ___.', 'Zuek bi auto ___?', 'Haiek lorategi handi bat ___.', 'Guk lau aulki ___.'] },
+        { n:'3', m:'tx', zer:'Ezezko esaldiak · pásalo a negativa', en:'Adib.: *Etxeak garajea dauka.* → *Etxeak ez dauka garajerik.*', it:L(1,5),
+          gal:['Etxeak balkoia dauka.', 'Etxeak igogailua dauka.', 'Nik telebista daukat.', 'Guk terraza daukagu.', 'Etxeak berogailua dauka.'] },
+        { n:'4', m:'bai', zer:'Irakurri · lee y di si es verdad (Bai) o no (Ez)', it:L(1,6),
+          tes:'Laiaren etxea hirugarren solairuan dago. Bi logela, egongela bat, sukaldea eta bainugela dauzka. Egongelak balkoi txiki bat dauka. Etxeak ez dauka terrazarik, baina trasteleku bat badauka. Eraikinak igogailua dauka.',
+          gal:['Laiaren etxea bigarren solairuan dago.', 'Etxeak bi logela dauzka.', 'Balkoia sukaldean dago.', 'Etxeak terraza dauka.', 'Etxeak trastelekua dauka.', 'Eraikinak ez dauka igogailurik.'] } ] },
+
+    { id:'A', k:'2', ref:['arian', '88–92'],
+      lan:'**Pisu bila.** Pedir los datos de un piso: *behar* y *nahi* con una cosa o con varias (**dut / ditut**), el precio con *balio izan* y los números a partir de 100.',
+      lot:[[14, 'Nahi, behar, ahal y ari izan'], [10, 'UKAN'], [17, 'Números, hora y calendario']],
+      ar:[
+        { t:'hiz', iz:'Zenbakiak · a partir de 100', l:[
+          ['ehun', '100'], ['berrehun', '200'], ['hirurehun', '300'], ['laurehun', '400'], ['bostehun', '500'], ['seiehun', '600'], ['zazpiehun', '700'], ['zortziehun', '800'],
+          ['bederatziehun', '900'], ['mila', '1.000'], ['ehun eta hogei', '120'], ['mila eta berrehun', '1.200'], ['bi mila', '2.000'], ['milioi bat', '1.000.000'] ] },
+        { t:'hiz', iz:'Iragarkiak · en los anuncios', l:[
+          ['iragarkia', 'anuncio'], ['alokairua', 'alquiler'], ['alokatzeko', 'para alquilar'], ['saltzeko · salgai', 'en venta'], ['jabea', 'propietario'], ['agentzia', 'agencia'],
+          ['hilean', 'al mes'], ['gastuak', 'gastos'], ['erdigunean', 'en el centro'], ['berrituta', 'reformado'], ['estreinatzeko', 'a estrenar'], ['altzariz jantzita', 'amueblado'],
+          ['merkea', 'barato'], ['garestia', 'caro'], ['argitsua', 'luminoso'] ] },
+        { t:'elk', iz:'Elkarrizketa · en la agencia', l:[
+          ['Aimar', 'Egun on. Pisu bat behar dut, alokatzeko.', 'Buenos días. Necesito un piso, para alquilar.'],
+          ['Agentzia', 'Zenbat logela nahi dituzu?', '¿Cuántos dormitorios quiere?'],
+          ['Aimar', 'Bi logela nahi ditut, eta balkoi bat.', 'Quiero dos dormitorios y un balcón.'],
+          ['Agentzia', 'Pisu bat daukagu erdigunean. Bi logela dauzka, eta altzariz jantzita dago.', 'Tenemos un piso en el centro. Tiene dos dormitorios y está amueblado.'],
+          ['Aimar', 'Zenbat balio du?', '¿Cuánto cuesta?'],
+          ['Agentzia', 'Hilean zortziehun eta berrogeita hamar balio du.', 'Cuesta ochocientos cincuenta al mes.'],
+          ['Aimar', 'Garestia da. Merkeagoa nahi dut.', 'Es caro. Quiero uno más barato.'],
+          ['Agentzia', 'Beste bat daukagu, baina urrunago dago, eta ez dauka igogailurik.', 'Tenemos otro, pero está más lejos y no tiene ascensor.'] ] },
+        { t:'gram', iz:'Behar, nahi eta balio',
+          p:['**behar** (necesitar) y **nahi** (querer) van con *ukan*: **dut** si es una cosa y **ditut** si son varias: *Pisu bat behar dut* · *Bi logela nahi ditut*.',
+             'En negativa el auxiliar se adelanta y el nombre lleva **-(r)ik**: **Ez dut garajerik behar**.',
+             'El precio: **Zenbat balio du?** — **Zazpiehun balio du**. Si son varias cosas, **Zenbat balio dute?**'],
+          taula:{ cols:['nork', 'una cosa', 'varias cosas'], rows:[['nik', 'dut', 'ditut'], ['zuk', 'duzu', 'dituzu'], ['hark', 'du', 'ditu'], ['guk', 'dugu', 'ditugu'], ['zuek', 'duzue', 'dituzue'], ['haiek', 'dute', 'dituzte']] } },
+
+        { n:'1', m:'tx', zabal:true, zer:'Zenbakiak · escribe el número con letras', it:['100', '200', '300', '500', '700', '900', '1.000', '150', '420', '1.200'] },
+        { n:'2', m:'auk', zer:'Aukeratu · una cosa o varias',
+          it:[['1', ['dut', 'ditut']], ['2', ['dut', 'ditut']], ['3', ['duzu', 'dituzu']], ['4', ['dugu', 'ditugu']], ['5', ['du', 'ditu']], ['6', ['duzue', 'dituzue']], ['7', ['dute', 'dituzte']], ['8', ['dute', 'dituzte']]],
+          gal:['Pisu bat behar ___.', 'Hiru logela behar ___.', 'Zuk garaje bat nahi ___?', 'Guk bi bainugela nahi ___.', 'Enarak terraza bat nahi ___.', 'Zuek zenbat logela behar ___?',
+               'Nire gurasoek etxe handi bat behar ___.', 'Haiek lau aulki nahi ___.'] },
+        { n:'3', m:'tx', zer:'Irakurri eta erantzun · lee los dos anuncios y contesta', it:L(1,5),
+          tes:['Pisua alokatzeko, erdigunean. Hiru logela, egongela handia eta bi bainugela. Altzariz jantzita. Igogailua dauka. 950 € hilean.',
+               'Apartamentua alokatzeko, hondartzatik hurbil. Logela bat eta sukalde-egongela. Terraza txikia. Ez dauka igogailurik. 600 € hilean.'],
+          gal:['Zenbat logela dauzka pisuak?', 'Zenbat balio du pisuak hilean?', 'Non dago apartamentua?', 'Apartamentuak igogailua dauka?', 'Zein dago altzariz jantzita?'] },
+        { n:'4', m:'tx', zer:'Ezezko esaldiak · pásalo a negativa', en:'Adib.: *Garaje bat behar dut.* → *Ez dut garajerik behar.*', it:L(1,4),
+          gal:['Balkoi bat behar dut.', 'Igogailua behar dugu.', 'Terraza bat nahi dut.', 'Berogailua behar dute.'] } ] },
+
+    { id:'B', k:'3', ref:['arian', '93–95'],
+      lan:'**Zein da handiagoa?** Comparar dos casas: **-ago(a)** en adjetivos y adverbios (handiagoa, hurbilago) y **gehiago / gutxiago** con cantidades.',
+      lot:[[16, 'Adjetivos y posposiciones']],
+      falta:'*gehiago / gutxiago* todavía no está explicado en Geruzak.',
+      ar:[
+        { t:'hiz', iz:'Adjektiboak · para comparar casas', l:[
+          ['handia', 'grande'], ['txikia', 'pequeño'], ['berria', 'nuevo'], ['zaharra', 'viejo'], ['merkea', 'barato'], ['garestia', 'caro'], ['argitsua', 'luminoso'], ['iluna', 'oscuro'],
+          ['lasaia', 'tranquilo'], ['zaratatsua', 'ruidoso'], ['erosoa', 'cómodo'], ['xumea', 'sencillo'], ['hurbil', 'cerca'], ['urrun', 'lejos'] ] },
+        { t:'elk', iz:'Elkarrizketa · dos pisos', l:[
+          ['Nahia', 'Bi pisu daude kale honetan. Zein nahi duzu?', 'Hay dos pisos en esta calle. ¿Cuál quieres?'],
+          ['Ekaitz', 'Nolakoak dira?', '¿Cómo son?'],
+          ['Nahia', 'Lehenengoa handia eta argitsua da, baina garestia.', 'El primero es grande y luminoso, pero caro.'],
+          ['Ekaitz', 'Eta bigarrena?', '¿Y el segundo?'],
+          ['Nahia', 'Bigarrena txikiagoa eta ilunagoa da, baina merkeagoa. Eta erdigunetik hurbilago dago.', 'El segundo es más pequeño y más oscuro, pero más barato. Y está más cerca del centro.'],
+          ['Ekaitz', 'Zenbat logela dauzkate?', '¿Cuántos dormitorios tienen?'],
+          ['Nahia', 'Lehenengoak hiru dauzka. Bigarrenak logela gutxiago dauzka: bi.', 'El primero tiene tres. El segundo tiene menos dormitorios: dos.'],
+          ['Ekaitz', 'Nik bigarrena nahi dut: merkeagoa da, eta ez dut logela gehiago behar.', 'Yo quiero el segundo: es más barato, y no necesito más dormitorios.'] ] },
+        { t:'gram', iz:'-ago · más…',
+          p:['Para comparar se añade **-ago** al adjetivo y, detrás, el artículo: **handiagoa** (más grande), **handiagoak** (más grandes). En los adverbios, sin artículo: **hurbilago**, **urrunago**.',
+             'Con cantidades, **gehiago** (más) y **gutxiago** (menos), detrás del nombre: *logela gehiago*, *leiho gutxiago*.'],
+          taula:{ cols:['', 'cómo es', 'más…'], rows:[['grande', 'handia', 'handiagoa'], ['barato', 'merkea', 'merkeagoa'], ['viejo', 'zaharra', 'zaharragoa'], ['oscuro', 'iluna', 'ilunagoa'], ['cerca', 'hurbil', 'hurbilago'], ['lejos', 'urrun', 'urrunago']] } },
+
+        { n:'1', m:'tx', zer:'Konparazioak · forma el comparativo', en:'Adib.: *polita* → *politagoa*.', it:L(1,10),
+          gal:['handia → ___', 'txikia → ___', 'merkea → ___', 'garestia → ___', 'berria → ___', 'zaharra → ___', 'argitsua → ___', 'lasaia → ___', 'hurbil → ___', 'urrun → ___'] },
+        { n:'2', m:'bai', zer:'Irakurri · lee y di si es verdad (Bai) o no (Ez)', it:L(1,5),
+          tes:'Uxueren pisuak lau logela dauzka, eta 900 € balio du hilean. Erdigunean dago, kale zaratatsu batean. Koldoren pisuak bi logela dauzka, eta 600 € balio du hilean. Erdigunetik urrun dago, baina oso lasaia da.',
+          gal:['Uxueren pisua handiagoa da.', 'Koldoren pisua garestiagoa da.', 'Uxueren pisuak logela gehiago dauzka.', 'Koldoren pisua erdigunetik hurbilago dago.', 'Koldoren pisua lasaiagoa da.'] },
+        { n:'3', m:'auk', zer:'Aukeratu · compara',
+          it:[['1', ['merkeagoa', 'garestiagoa']], ['2', ['gehiago', 'gutxiago']], ['3', ['gehiago', 'gutxiago']], ['4', ['berriagoa', 'zaharragoa']], ['5', ['argitsuagoa', 'ilunagoa']], ['6', ['lasaiagoa', 'zaratatsuagoa']]],
+          gal:['Pisu honek 500 € balio du; horrek, 800 €. Pisu hau ___ da.', 'Etxe honek bi logela dauzka; horrek, lau. Etxe horrek logela ___ dauzka.',
+               'Egongelak hiru leiho dauzka; sukaldeak, bat. Sukaldeak leiho ___ dauzka.', 'Etxe hau berria da; hori, zaharra. Etxe hau ___ da.',
+               'Logela honek leiho handi bat dauka; horrek ez dauka leihorik. Logela hori ___ da.', 'Kale hau lasaia da; hori, zaratatsua. Kale hau ___ da.'] },
+        { n:'4', m:'tx', hizk:'es', zer:'Euskaraz · dilo en euskera', it:L(1,6),
+          gal:['más grande → ___', 'más caras (varias) → ___', 'más cerca → ___', 'más dormitorios → ___', 'menos ventanas → ___', 'más barato → ___'] } ] },
+
+    { id:'C', k:'4', ref:['arian', '96–98'],
+      lan:'**Altzariak.** Muebles y utensilios, habitación por habitación. Decir qué hay y qué no (**badago / ez dago …-rik**) y qué necesitas y qué no (**behar dut / ez dut …-rik behar**).',
+      lot:[[15, 'La negación y el partitivo'], [14, 'Nahi, behar, ahal y ari izan']],
+      ar:[
+        { t:'hiz', iz:'Egongela eta logela · la sala y el dormitorio', l:[
+          ['sofa', 'sofá'], ['besaulkia', 'sillón'], ['mahaia', 'mesa'], ['aulkia', 'silla'], ['apalategia', 'estantería'], ['telebista', 'televisión'], ['lanpara', 'lámpara'],
+          ['alfonbra', 'alfombra'], ['gortinak', 'cortinas'], ['kuxina', 'cojín'], ['ohea', 'cama'], ['gau-mahaia', 'mesilla de noche'], ['armairua', 'armario'], ['ispilua', 'espejo'],
+          ['burkoa', 'almohada'], ['izara', 'sábana'], ['iratzargailua', 'despertador'], ['ordenagailua', 'ordenador'] ] },
+        { t:'hiz', iz:'Sukaldea eta bainugela · la cocina y el baño', l:[
+          ['hozkailua', 'frigorífico'], ['labea', 'horno'], ['mikrouhin-labea', 'microondas'], ['garbigailua', 'lavadora'], ['ontzi-garbigailua', 'lavavajillas'], ['harraska', 'fregadero'],
+          ['platera', 'plato'], ['edalontzia', 'vaso'], ['koilara', 'cuchara'], ['sardexka', 'tenedor'], ['labana', 'cuchillo'], ['lapikoa', 'cazuela'], ['zartagina', 'sartén'],
+          ['bainuontzia', 'bañera'], ['dutxa', 'ducha'], ['konketa', 'lavabo'], ['eskuoihala', 'toalla'] ] },
+        { t:'elk', iz:'Elkarrizketa · qué hay y qué falta', l:[
+          ['Maddi', 'Zer dago zure logelan, Jurgi?', '¿Qué hay en tu dormitorio, Jurgi?'],
+          ['Jurgi', 'Ohe bat, armairu bat eta mahai txiki bat. Baina ez dago aulkirik.', 'Una cama, un armario y una mesa pequeña. Pero no hay sillas.'],
+          ['Maddi', 'Eta sukaldean, zer daukazu?', 'Y en la cocina, ¿qué tienes?'],
+          ['Jurgi', 'Hozkailua eta labea dauzkat, baina ez daukat garbigailurik.', 'Tengo frigorífico y horno, pero no tengo lavadora.'],
+          ['Maddi', 'Garbigailu bat behar duzu!', '¡Necesitas una lavadora!'],
+          ['Jurgi', 'Bai, eta platerak eta edalontziak ere behar ditut. Bi bakarrik dauzkat!', 'Sí, y también necesito platos y vasos. ¡Solo tengo dos!'],
+          ['Maddi', 'Eta telebista?', '¿Y televisión?'],
+          ['Jurgi', 'Ez, ez dut telebistarik behar. Ordenagailua daukat.', 'No, no necesito televisión. Tengo el ordenador.'] ] },
+        { t:'gram', iz:'Zer dago? Zer behar duzu?',
+          p:['Qué hay: **Logelan ohe bat dago** · **Bi aulki daude**. Qué no hay: **Ez dago aulkirik**.',
+             'Qué necesitas: **Garbigailu bat behar dut** · **Platerak behar ditut**. Y qué no: **Ez dut ispilurik behar**.',
+             'La habitación va en *non*: **sukaldean**, **egongelan**, **logelan**, **bainugelan**.'] },
+
+        { n:'1', m:'abc', zer:'Non dago? · en qué habitación suele estar', it:L(1,10), op:['sukaldean', 'egongelan', 'logelan', 'bainugelan'],
+          gal:['hozkailua', 'ohea', 'sofa', 'bainuontzia', 'labea', 'gau-mahaia', 'konketa', 'besaulkia', 'harraska', 'burkoa'] },
+        { n:'2', m:'auk', zer:'Aukeratu · *dago* ala *daude*',
+          it:[['1', ['dago', 'daude']], ['2', ['dago', 'daude']], ['3', ['dago', 'daude']], ['4', ['dago', 'daude']], ['5', ['dago', 'daude']], ['6', ['dago', 'daude']]],
+          gal:['Egongelan sofa bat ___.', 'Sukaldean lau aulki ___.', 'Logelan ez ___ ispilurik.', 'Bainugelan bi eskuoihal ___.', 'Balkoian mahai txiki bat ___.', 'Sukaldean platerak eta edalontziak ___.'] },
+        { n:'3', m:'tx', zer:'Zer behar duzu? · di qué necesitas', en:'Adib.: *Ez daukat oherik.* → *Ohe bat behar dut.*', it:L(1,5),
+          gal:['Ez daukat hozkailurik.', 'Ez daukat aulkirik.', 'Ez daukagu garbigailurik.', 'Ez daukat platerik.', 'Ez daukagu mahairik.'] },
+        { n:'4', m:'tx', zer:'Irakurri eta erantzun · lee y contesta', it:L(1,5),
+          tes:'Enararen pisua altzariz jantzita dago. Egongelan sofa bat, bi besaulki eta telebista daude. Sukaldean hozkailua, labea eta ontzi-garbigailua daude, baina ez dago mikrouhin-laberik. Logelan ohe handi bat eta armairu bat daude. Bainugelak dutxa dauka, baina ez dauka bainuontzirik.',
+          gal:['Zer dago egongelan?', 'Badago mikrouhin-laberik sukaldean?', 'Zenbat besaulki daude?', 'Bainugelak bainuontzia dauka?', 'Eta zure logelan, zer dago?'] } ] },
+
+    { id:'E', k:'5', ref:['arian', '99–101'],
+      lan:'**Erabili.** Práctica de toda la unidad: preguntas sobre dos anuncios, un repaso de elegir, tu casa y tu anuncio por escrito.',
+      ar:[
+        { n:'1', m:'tx', zer:'Irakurri eta erantzun · lee los dos anuncios y contesta', it:L(1,6),
+          tes:['A · Pisua salgai Getxon. Lau logela, bi bainugela eta egongela handia. Garajea eta trastelekua dauzka. Berrituta dago. Tren-geltokitik hurbil.',
+               'B · Apartamentua alokatzeko Zarautzen, hondartzatik hurbil. Logela bat, sukalde-egongela eta terraza. Altzariz jantzita. Ez dauka garajerik. 700 € hilean.'],
+          gal:['Zein dago salgai?', 'Zenbat bainugela dauzka pisuak?', 'Non dago apartamentua?', 'Apartamentuak garajea dauka?', 'Zenbat balio du apartamentuak hilean?', 'Zein da handiagoa?'] },
+        { n:'2', m:'auk', zer:'Aukeratu · elige la opción correcta',
+          it:[['1', ['daukat', 'dauzkat', 'dauka']], ['2', ['-rik', '-a', '-an']], ['3', ['dut', 'ditut', 'dago']], ['4', ['dut', 'ditut', 'daukat']], ['5', ['bostehun', 'berrehun', 'bederatziehun']],
+              ['6', ['du', 'dago', 'dauka']], ['7', ['merkeagoa', 'merkea', 'merke']], ['8', ['gehiago', 'handiagoa', 'hurbilago']], ['9', ['sukaldean', 'logelan', 'bainugelan']], ['10', ['behar', 'dago', 'balio']]],
+          gal:['Nik bi logela ___.', 'Etxeak ez dauka garaje___.', 'Pisu bat behar ___.', 'Hiru aulki nahi ___.', '500 = ___', '— Zenbat balio ___ pisuak? — 800 €.',
+               'Pisu hau merkea da, baina hori ___ da.', 'Etxe honek logela ___ dauzka.', 'Hozkailua ___ dago.', 'Ez dut telebistarik ___.'] },
+        { n:'3', m:'tx', bat:true, zer:'Zure etxea · contesta sobre tu casa', it:L(1,5),
+          gal:['Nolakoa da zure etxea?', 'Zenbat logela dauzka?', 'Badauka balkoirik edo terrazarik?', 'Zer dago zure egongelan?', 'Zer behar duzu zure etxean?'] },
+        { n:'4', m:'idaz', zer:'Idatzi · escribe el anuncio de tu piso', en:'Di cómo es, cuántas habitaciones tiene, qué tiene y qué no, dónde está y cuánto cuesta.' } ] },
+
+    { id:'Bd', k:'6', ref:['arian', '102'],
+      lan:'**Badakizu?** Autoevaluación de la unidad: seis puntos, cada uno con Bai o Ez. Lo que marques con Ez, repásalo en su apartado.',
+      ar:[
+        { n:'', m:'bai', hizk:'es', zer:'Badakizu? · ¿ya sabes…?', it:L(1,6),
+          gal:['Nombrar las partes de una casa.', 'Decir qué tiene una casa con *eduki* (dauka / dauzka).', 'Decir qué necesito y qué quiero, y preguntar el precio.',
+               'Los números a partir de 100.', 'Comparar dos casas (-ago, gehiago, gutxiago).', 'Nombrar los muebles y decir qué hay y qué no en cada habitación.'] } ] }
+  ] });
+
   window.LIBURUAK = window.LIBURUAK || {};
   window.LIBURUAK.ikasgaiak = { src:'claude', izena:'Ikasgaiak A1', taldea:'Ikasgaiak', unitateak:U };
 })();
