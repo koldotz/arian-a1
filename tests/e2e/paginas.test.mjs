@@ -1,7 +1,7 @@
 // Todas las páginas, en escritorio y en móvil: sin errores de JavaScript, sin
 // recursos locales que falten, sin ids repetidos y sin desbordamiento
 // horizontal (la página no debe moverse de lado en el móvil).
-const PAGES = ['index.html', 'arian.html', 'bakarka.html', 'geruzak.html', 'glosarioa.html'];
+const PAGES = ['index.html', 'ikasgaiak.html', 'arian.html', 'bakarka.html', 'geruzak.html', 'glosarioa.html'];
 
 export default async function(t){
   for (const [w, mobile] of [[1280, false], [390, true], [320, true]]) {

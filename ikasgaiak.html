@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="eu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Ikasgaiak A1: lecciones propias para trabajar sin el libro, con textos, vocabulario, gramática, ejercicios y corrección. Siguen el temario de Arian A1.">
+<meta name="theme-color" content="#171B18">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
+<title>Ikasgaiak A1 · liburu gabe</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="oinarria.css">
+<script src="iturriak.js"></script>
+</head>
+<body>
+
+<div class="hub"><div class="in">
+  <a class="brand" href="index.html" title="Hasierara · a la portada"><b>Liburuen <em>koadernoa</em></b><span>Arian A1 · Bakarka 1</span></a>
+  <nav aria-label="Atalak">
+    <a href="ikasgaiak.html" aria-current="page"><span class="t">Ikasgaiak</span><span class="c">liburu gabe</span></a>
+    <a href="arian.html"><span class="t">Arian A1</span><span class="c">12 unitate</span></a>
+    <a href="bakarka.html"><span class="t">Bakarka 1</span><span class="c">13 ikasgai</span></a>
+    <a href="geruzak.html"><span class="t">Geruzak</span><span class="c">Gramatika</span></a>
+  </nav>
+  <button type="button" class="who" id="who" data-state="local" aria-label="Perfil y guardado"><span class="dot"></span><span class="stack"><b class="nm">Sin perfil</b><span class="st">Solo en este navegador</span></span></button>
+  <button type="button" class="lbtn" id="lbBtn" title="Libreta: todo lo trabajado en las lecciones, en PDF" aria-label="Libreta: exportar lo trabajado a PDF"><span aria-hidden="true">📓</span><span class="lbt">Libreta</span></button>
+</div></div>
+<script src="hub.js"></script>
+
+<section class="app" id="app-koadernoa">
+<div class="shell">
+<nav class="toc" aria-label="Índice del cuaderno"><div class="inner">
+  <div class="brand">Ikasgaiak A1<br><span>liburu gabe</span></div>
+  <div class="sub">3 ikasgai · 71 ariketa</div>
+</div></nav>
+
+<main>
+<header class="hero"><div class="wrap">
+  <div class="eyebrow">Ikasgaiak · A1</div>
+  <h1>Ikasgaiak, <em>liburu gabe</em></h1>
+  <p class="lede">Lecciones para trabajar sin el libro delante: cada apartado trae su texto, su vocabulario, su gramática y sus ejercicios, con corrección. De momento están las tres primeras, de las doce unidades del libro.</p>
+  <div class="how">
+    <div><b>El temario, del libro</b><p>Cada lección sigue una unidad de <i>Arian A1</i>: los mismos puntos, con sus palabras y sus formas. Cada apartado dice en qué páginas lo trata el libro.</p></div>
+    <div><b>Las frases, nuevas</b><p>Los diálogos, los textos y los ejercicios están escritos de nuevo por Claude (&#9888;): no son los del libro ni una versión de ellos.</p></div>
+    <div><b>Egiaztatu</b><p>Termina el ejercicio y compruébalo. Las respuestas abiertas no se marcan como error: se enseña un modelo para comparar.</p></div>
+    <div><b>Se guarda solo</b><p>Todo lo que escribes queda guardado. Con un perfil (nombre y PIN) te sigue al móvil y a cualquier navegador.</p></div>
+  </div>
+</div></header>
+
+<footer><div class="wrap">
+  <p><b>Ikasgaiak A1</b> — lecciones propias, para trabajar sin el libro. Siguen el temario de <i>Arian A1 · ikaslearen liburua</i> (Elkar), unidad por unidad, y usan solo el vocabulario y las formas de cada unidad; no llevan su texto.</p>
+  <p>Las frases, los diálogos, los ejercicios, las notas y las soluciones son de Claude (&#9888;): conviene contrastarlos con el libro, que es el que manda. Las hojas de respuestas del libro siguen en <a href="arian.html">Arian A1</a>.</p>
+</div></footer>
+</main>
+</div>
+</section>
+
+<div class="gate" id="gate" hidden>
+  <div class="gbox" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+    <div class="eyebrow">Liburuen koadernoa</div>
+    <h2 id="gateTitle">Nor <em>zara</em>?</h2>
+    <p class="lede">Escribe tu nombre y el cuaderno guardará tus respuestas con él.</p>
+    <form id="gateForm">
+      <input id="gateName" type="text" autocomplete="off" placeholder="Maialen" maxlength="40" required aria-label="Tu nombre">
+      <button type="submit">Sartu</button>
+    </form>
+    <p class="fine">El perfil es el mismo que en Euskara Armairua: si ya tienes uno, entra con su nombre y su PIN.</p>
+    <button type="button" class="later" id="gateLater">Ahora no — guardar solo en este navegador</button>
+  </div>
+</div>
+
+<script src="datuak/ikasgaiak-a1.js"></script>
+<script src="datuak/ikasgaiak-a1-erantzunak.js"></script>
+<script src="orriak.js"></script>
+<script src="egiaztatu.js"></script>
+<script>
+ORRIAK.render({ root: '#app-koadernoa', liburua: LIBURUAK.ikasgaiak });
+EGIAZTATU.setup({ root: '#app-koadernoa', erantzunak: (window.ERANTZUNAK || {}).ikasgaiak, nor: 'claude', berezkoa: true });
+</script>
+<script src="libreta.js"></script>
+<script>
+LIBRETA.setup({
+  maila: 'Ikasgaiak A1', key: 'euskara-libreta-ikasgaiak',
+  stats: function(){
+    var done = 0, tot = 0, units = 0;
+    LIBURUAK.ikasgaiak.unitateak.forEach(function(u){ var n = ORRIAK.landuak(u, ORRIAK.gordea(u.id)); done += n; tot += ORRIAK.ariketak(u).length; if (n) units++; });
+    return [{ v: done + ' / ' + tot, l: 'ejercicios trabajados' }, { v: units + ' / ' + LIBURUAK.ikasgaiak.unitateak.length, l: 'lecciones empezadas' }];
+  },
+  sections: [{ id: 'koad', icon: '✏️', eu: 'Ikasgaiak', title: 'Ikasgaiak A1 · lo trabajado', build: LIBRETA.koadernoa(document.getElementById('app-koadernoa')) }]
+});
+document.getElementById('lbBtn').addEventListener('click', function(){ LIBRETA.open(); });
+</script>
+<script src="config.js"></script>
+<script src="cloud.js"></script>
+</body>
+</html>

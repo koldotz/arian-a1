@@ -13,6 +13,7 @@
                                        coincide, sin llevar aquí la frase del libro
      nor → de quién son las soluciones: 'claude' (resueltas leyendo la página, sin contrastar
            con el libro) o la clave del libro (su solucionario)
+     berezkoa → true en las lecciones propias: el ejercicio y su solución son de Claude
    Cada ejercicio con soluciones gana un botón «Egiaztatu». Las casillas:
      ✓ coincide · ✗ no coincide (se enseña la solución) · modelo para comparar.
    Lo que cambias pierde su marca. No se guarda nada: es una ayuda para repasar.
@@ -123,7 +124,7 @@
       var sp = ar.getAttribute('data-sp');
       var bar = document.createElement('div'); bar.className = 'kc-bar';
       bar.innerHTML = '<button type="button" class="kc-btn">✓ Egiaztatu · comprobar</button><span class="kc-sum" role="status" aria-live="polite"></span>' +
-        '<span class="kc-src" title="' + (own ? 'Soluciones resueltas por Claude leyendo la página: no están contrastadas con el solucionario del libro' : 'Soluciones del solucionario del libro') + '">soluciones ' + badge() + (sp ? ' <span>' + esc(sp) + '. or.</span>' : '') + '</span>' +
+        '<span class="kc-src" title="' + (CFG.berezkoa ? 'El ejercicio y su solución están escritos por Claude: no salen de ningún libro' : own ? 'Soluciones resueltas por Claude leyendo la página: no están contrastadas con el solucionario del libro' : 'Soluciones del solucionario del libro') + '">soluciones ' + badge() + (sp ? ' <span>' + esc(sp) + '. or.</span>' : '') + '</span>' +
         (sols._oh ? '<span class="kc-note">' + esc(sols._oh) + '</span>' : '');
       ar.appendChild(bar);
       bar.querySelector('.kc-btn').addEventListener('click', function(){ if (ar.classList.contains('kc-on')) clear(ar); else check(ar); });

@@ -7,6 +7,7 @@ Hojas de respuestas para trabajar dos libros de euskera de nivel A1 desde la pan
 | Página | Qué es |
 |---|---|
 | `index.html` | Portada: los dos libros, con el progreso de cada unidad |
+| `ikasgaiak.html` | *Ikasgaiak*: lecciones propias para trabajar **sin el libro** (lecciones 1 a 3) |
 | `arian.html` | *Arian A1 · ikaslearen liburua* (Elkar): 12 unidades, 457 ejercicios, 109 con audio |
 | `bakarka.html` | *Bakarka 1* (J.A. Letamendia, Elkar): lecciones 2 a 14, 144 ejercicios |
 | `geruzak.html` | *Euskararen Geruzak*: la gramática del nivel en 20 bloques, con «gafas» de traducción y morfemas |
@@ -17,6 +18,15 @@ Hojas de respuestas para trabajar dos libros de euskera de nivel A1 desde la pan
 **No está el texto de los libros.** De cada ejercicio la web lleva solo lo que hace falta para contestar: su número, su página, la pista de audio y las casillas (cuántas, de qué tipo y qué trae ya resuelto el libro). Los enunciados, los diálogos, las lecturas y la teoría se leen en el libro, que hay que tener delante.
 
 Lo que sí es texto es propio y va marcado con **⚠ Claude**: la nota de cada apartado (qué se trabaja y en qué bloque de Geruzak se explica), la descripción de cada ejercicio, la guía Geruzak y el glosario. Conviene contrastarlo con los libros.
+
+## Ikasgaiak · lecciones sin libro
+
+Las hojas de respuestas no sirven sin el libro delante. *Ikasgaiak* es la parte que sí: cada apartado trae su texto, su vocabulario, su gramática y sus ejercicios, con corrección. Están hechas las lecciones 1 a 3 (71 ejercicios), que siguen las unidades 1 a 3 de *Arian A1*.
+
+- **Del libro sale el temario, no el texto.** Los puntos que se trabajan, las formas gramaticales y las palabras son los de la unidad y las anteriores; cada apartado dice en qué páginas lo trata el libro. No se añade vocabulario ni gramática que esas unidades no tengan.
+- **Las frases son nuevas.** Diálogos, textos, ejercicios y soluciones están escritos por Claude (⚠), con otros nombres y otras situaciones; no son los del libro ni una versión de ellos. Las traducciones y las explicaciones en castellano también son de Claude.
+- **Cómo se comprueba.** En el ordenador donde está la transcripción personal de la unidad (fuera de este repositorio), `node pribatua/tresnak/ikasgaiak-iturria.mjs` verifica las dos cosas: que ninguna palabra en euskera de la lección queda fuera del vocabulario de su unidad y las anteriores, y que ninguna frase coincide con una del libro, tampoco cambiando los nombres. Las tres lecciones dan 0 y 0.
+- **Lo que falta.** Las lecciones 4 a 12 (de esas unidades no hay lista de palabras: hay que sacarla antes), el audio (no hay) y que alguien que sepa euskera revise las frases.
 
 ## Corrección («Egiaztatu»)
 
@@ -51,6 +61,7 @@ orriak.js                    pinta las hojas y sus casillas (formato de datos en
 egiaztatu.js                 corrección
 libreta.js                   libreta en PDF
 liburua.js                   visor de tu PDF (solo se carga en local)
+datuak/ikasgaiak-a1.js       lecciones propias          datuak/ikasgaiak-a1-erantzunak.js  sus soluciones (⚠ Claude)
 datuak/arian-a1.js           hojas de Arian A1          datuak/arian-a1-erantzunak.js    sus soluciones (⚠ Claude)
 datuak/bakarka-1.js          hojas de Bakarka 1         datuak/bakarka-1-erantzunak.js   palabras y huellas
 tools/liburua.mjs            enlaza tus PDF y audios en pribatua/
@@ -69,6 +80,7 @@ npm run test:rapido  # solo las de datos
 ```
 
 - `datos/orriak`: hojas bien formadas, **ningún rótulo es una frase** (no llevan el texto del libro), cada solución corresponde a una casilla, y de Bakarka solo van en claro palabras sueltas.
+- `datos/ikasgaiak`: lecciones bien formadas, cada apartado con su referencia a las páginas del libro, ningún ejercicio con página ni pista, y cada solución en una casilla que existe.
 - `datos/pribatua`: `pribatua/` y el visor no se publican; `config.js` lleva solo la clave pública.
 - `datos/service-worker`: todo lo que cargan las páginas está en la caché sin conexión.
 - `e2e/paginas`: las cinco páginas a 1280, 390 y 320 px, y los enlaces internos.

@@ -70,6 +70,30 @@ export default async function(t){
   t.ok(!A.errs.filter(e => !/pribatua/.test(e)).length, 'Arian A1: sin errores de JavaScript' + (A.errs.length ? ': ' + A.errs[0] : ''));
   await A.close();
 
+  // ── Ikasgaiak: lecciones propias (ejercicio y solución de Claude)
+  const I = await t.tab({ width: 1280, height: 900 });
+  await I.go(t.base + '/ikasgaiak.html', 2000);
+  const ik = JSON.parse(await I.ev(FILL + `('ikasgaiak')`));
+  t.ok(ik.ex >= 65 && !ik.bad.length && ik.ko === 0 && ik.cmp === 0, `Ikasgaiak: con sus soluciones puestas, los ${ik.ex} ejercicios con corrección salen bien (${ik.ok} casillas)` + (ik.bad.length ? ' — ' + ik.bad.slice(0, 5).join(' | ') : ''));
+  // lo mal contestado, el sufijo y la respuesta abierta (en una página limpia)
+  await I.go(t.base + '/ikasgaiak.html?garbi', 2000);
+  const iw = JSON.parse(await I.ev(`(function(){
+    var u = document.getElementById('ika-01'), q = function(k){ return u.querySelector('[data-k="f:' + k + '"]'); };
+    function fire(el, v){ el.value = v; el.dispatchEvent(new Event('input', { bubbles: true })); }
+    fire(q('At2:1'), 'zara'); fire(q('At2:2'), 'Nor'); fire(q('B1:2'), '-goa'); fire(q('B1:1'), 'Bilbokoa'); fire(q('At3:1'), 'Ez naiz ni Koldo');
+    var o = {};
+    ['At2', 'B1', 'At3'].forEach(function(k){ var ar = u.querySelector('.ar-orria[data-or="' + k + '"]'); ar.querySelector('.kc-btn').click();
+      o[k] = { sum: ar.querySelector('.kc-sum').textContent, sol: [].slice.call(ar.querySelectorAll('.kc-sol')).map(function(x){ return x.textContent; }).join(';'), model: (ar.querySelector('.kc-model') || {}).textContent || '' }; });
+    o.src = u.querySelector('.kc-src').getAttribute('title'); o.inline = !!u.querySelector('.ar-orria[data-or="At2"] .gq input.gapf'); o.pages = u.querySelectorAll('.or-orr').length;
+    var b = u.querySelector('.ik-elk'), es = b.querySelector('.ik-es'); o.hidden = getComputedStyle(es).display === 'none'; b.querySelector('.ik-itz').click(); o.shown = getComputedStyle(es).display !== 'none';
+    return JSON.stringify(o);
+  })()`));
+  t.ok(/✓ 1 · ✗ 1/.test(iw.At2.sum) && /→ naiz/.test(iw.At2.sol) && iw.inline, 'Ikasgaiak: el hueco va dentro de la frase; lo mal contestado enseña la solución (' + iw.At2.sum + ')');
+  t.ok(/✓ 2/.test(iw.B1.sum) && /1 para comparar/.test(iw.At3.sum) && /Modelo/.test(iw.At3.model), 'Ikasgaiak: vale el sufijo con guion o la palabra entera; una frase distinta del modelo no es un error');
+  t.ok(/escritos por Claude/.test(iw.src) && iw.pages === 0 && iw.hidden && iw.shown, 'Ikasgaiak: la corrección dice que ejercicio y solución son de Claude, no hay páginas de libro en los ejercicios y la traducción del diálogo se enseña al pedirla');
+  t.ok(!I.errs.length, 'Ikasgaiak: sin errores de JavaScript' + (I.errs.length ? ': ' + I.errs[0] : ''));
+  await I.close();
+
   // ── Bakarka 1
   const B = await t.tab({ width: 1280, height: 900 });
   await B.go(t.base + '/bakarka.html', 2500);
