@@ -74,7 +74,7 @@ export default async function(t){
   const I = await t.tab({ width: 1280, height: 900 });
   await I.go(t.base + '/ikasgaiak.html', 2000);
   const ik = JSON.parse(await I.ev(FILL + `('ikasgaiak')`));
-  t.ok(ik.ex >= 124 && !ik.bad.length && ik.ko === 0 && ik.cmp === 0, `Ikasgaiak: con sus soluciones puestas, los ${ik.ex} ejercicios con corrección salen bien (${ik.ok} casillas)` + (ik.bad.length ? ' — ' + ik.bad.slice(0, 5).join(' | ') : ''));
+  t.ok(ik.ex >= 143 && !ik.bad.length && ik.ko === 0 && ik.cmp === 0, `Ikasgaiak: con sus soluciones puestas, los ${ik.ex} ejercicios con corrección salen bien (${ik.ok} casillas)` + (ik.bad.length ? ' — ' + ik.bad.slice(0, 5).join(' | ') : ''));
   // lo mal contestado, el sufijo y la respuesta abierta (en una página limpia)
   await I.go(t.base + '/ikasgaiak.html?garbi', 2000);
   const iw = JSON.parse(await I.ev(`(function(){

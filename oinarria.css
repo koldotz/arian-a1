@@ -334,7 +334,7 @@ p.itn{font-family:var(--f-ui); font-size:12.5px; color:var(--muted); line-height
 .ik-gram p + p{margin-top:5px}
 .ik-gram p b, .ik-gram p i{color:var(--sea)}
 .ik-gram .or-taula{margin-top:10px}
-.ik-gram .or-taula td{white-space:normal}
+.ik-gram .or-taula td, .ik-gram .or-taula th{white-space:normal}
 .ik-gram .or-taula td + td{font-family:var(--f-body); font-size:15px; color:var(--ink)}
 #app-koadernoa .ar .or-en{font-family:var(--f-ui); font-size:13.5px; line-height:1.5; color:var(--ink-2); margin:0 0 10px}
 #app-koadernoa .ar .or-en i{color:var(--sea)}
@@ -350,4 +350,7 @@ p.itn{font-family:var(--f-ui); font-size:12.5px; color:var(--muted); line-height
 #app-koadernoa .or-it.or-gal > .gapf{flex:1 1 100%; margin:0 0 0 calc(1.6em + 10px)}
 #app-koadernoa .ar ol.items .gq{font-size:16px}
 @media (max-width:480px){ .ik-elk p{grid-template-columns:minmax(0,1fr)} .ik-elk p > b{padding-top:0} .ik-elk .ik-eu, .ik-elk .ik-es{grid-column:1} #app-koadernoa .or-it.or-gal > .gapf{margin-left:0} }
+/* en el móvil, las tablas de gramática de cuatro o cinco columnas tienen que caber enteras */
+@media (max-width:480px){ .ik-b{padding-left:12px; padding-right:12px} .ik-gram .or-taula th, .ik-gram .or-taula td{padding:4px 5px} .ik-gram .or-taula th{font-size:10px} .ik-gram .or-taula td{font-size:12px} .ik-gram .or-taula td + td{font-size:13.5px} }
+@media (max-width:360px){ .ik-gram .or-taula th, .ik-gram .or-taula td{padding:3px 3px} .ik-gram .or-taula td + td{font-size:12.5px} }
 @media print{ .ik-itz{display:none} .ik-elk .ik-es{display:block} }

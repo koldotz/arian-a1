@@ -1119,6 +1119,174 @@
                'Decir cómo queda una prenda (*-egi*, *nola dauka*).', 'Decir para quién es algo (*norentzat*).', 'Explicar por qué (*-lako*) y hablar de aficiones (*-t(z)ea gustatzen zaio*).'] } ] }
   ] });
 
+  /* ── 7 · Gaur, bihar, orain (mismo temario que Arian A1, unidad 7) ───── */
+  U.push({ id:'ika-07', n:7, eu:'Gaur, bihar, orain',
+    sarrera:'Contar lo que has hecho hoy, adónde has ido y de dónde vienes, lo que harás mañana y lo que estás haciendo ahora. Sigue el temario de la unidad 7 de *Arian A1* (143–163. or.) y usa solo sus palabras y sus formas (y las de las unidades anteriores); las frases, los diálogos y los ejercicios están escritos de nuevo, no son los del libro. Todavía no tiene audio.',
+    atalak:[
+
+    { id:'At', k:'1', ref:['arian', '144–145'],
+      lan:'**Gaur goizean.** Contar lo que has hecho hoy: participio + auxiliar (**jaiki naiz**, **gosaldu dut**). Los verbos intransitivos llevan *izan* y los transitivos *ukan*. En negativo el auxiliar se adelanta: **ez naiz jaiki**.',
+      lot:[[11, 'El aspecto: -tu, -t(z)en, -ko'], [9, 'IZAN'], [10, 'UKAN'], [15, 'La negación y el partitivo']],
+      ar:[
+        { t:'hiz', iz:'Aditzak · lo que se hace en un día', l:[
+          ['jaiki', 'levantarse'], ['gosaldu', 'desayunar'], ['irten', 'salir'], ['joan', 'ir'], ['iritsi', 'llegar'], ['bazkaldu', 'comer'], ['itzuli', 'volver'], ['etorri', 'venir'],
+          ['afaldu', 'cenar'], ['erosi', 'comprar'], ['ikusi', 'ver'], ['irakurri', 'leer'], ['idatzi', 'escribir'], ['ikasi', 'estudiar, aprender'], ['hartu', 'tomar, coger'], ['egin', 'hacer'],
+          ['deitu', 'llamar'], ['bidali', 'enviar'], ['galdu', 'perder'], ['ahaztu', 'olvidar'] ] },
+        { t:'hiz', iz:'Noiz · cuándo', l:[
+          ['gaur', 'hoy'], ['goizean', 'por la mañana'], ['eguerdian', 'al mediodía'], ['arratsaldean', 'por la tarde'], ['gauean', 'por la noche'], ['goiz', 'temprano'], ['berandu', 'tarde'] ] },
+        { t:'elk', iz:'Elkarrizketa · qué has hecho hoy', l:[
+          ['Nahia', 'Zer egin duzu gaur goizean?', '¿Qué has hecho hoy por la mañana?'],
+          ['Jurgi', 'Goiz jaiki naiz, eta kafe bat hartu dut. Gero, lanera joan naiz autobusean.', 'Me he levantado temprano y he tomado un café. Luego he ido al trabajo en autobús.'],
+          ['Nahia', 'Ez duzu gosaldu?', '¿No has desayunado?'],
+          ['Jurgi', 'Ez, ez dut gosaldu. Berandu iritsi naiz lanera!', 'No, no he desayunado. ¡He llegado tarde al trabajo!'],
+          ['Nahia', 'Eta eguerdian?', '¿Y al mediodía?'],
+          ['Jurgi', 'Lagun batekin bazkaldu dut, jatetxe batean. Eta zuk, zer egin duzu?', 'He comido con un amigo, en un restaurante. Y tú, ¿qué has hecho?'],
+          ['Nahia', 'Ni ez naiz etxetik irten. Liburu bat irakurri dut.', 'Yo no he salido de casa. He leído un libro.'] ] },
+        { t:'gram', iz:'Zer egin duzu? · lo que has hecho',
+          p:['Lo que has hecho hoy se dice con el participio y el auxiliar en presente.',
+             'Los verbos de movimiento o de cambio (*joan, etorri, jaiki, iritsi, itzuli, irten*) llevan **izan**: **joan naiz**. Los que tienen objeto (*gosaldu, erosi, ikusi, egin*) llevan **ukan**: **erosi dut**, y quien lo hace va en *nork*: *nik, zuk, hark…*',
+             'En negativa el auxiliar se adelanta: **Ez naiz jaiki** · **Ez dut gosaldu**.'],
+          taula:{ cols:['', 'joan (con izan)', 'erosi (con ukan)'], rows:[['ni · nik', 'joan naiz', 'erosi dut'], ['zu · zuk', 'joan zara', 'erosi duzu'], ['hura · hark', 'joan da', 'erosi du'],
+            ['gu · guk', 'joan gara', 'erosi dugu'], ['zuek', 'joan zarete', 'erosi duzue'], ['haiek', 'joan dira', 'erosi dute']] } },
+
+        { n:'1', m:'auk', zer:'Aukeratu · *izan* ala *ukan*',
+          it:[['1', ['naiz', 'dut']], ['2', ['naiz', 'dut']], ['3', ['da', 'du']], ['4', ['da', 'du']], ['5', ['gara', 'dugu']], ['6', ['gara', 'dugu']], ['7', ['zara', 'duzu']], ['8', ['dira', 'dute']]],
+          gal:['Gaur goiz jaiki ___.', 'Kafe bat hartu ___.', 'Aiora lanera joan ___.', 'Aiorak ogia erosi ___.', 'Gu berandu iritsi ___.', 'Guk etxean bazkaldu ___.', 'Zu noiz itzuli ___?', 'Haiek film bat ikusi ___.'] },
+        { n:'2', m:'tx', zer:'Osatu · el auxiliar', en:'Cada forma se usa una vez.', it:L(1,8), kutxa:['naiz', 'zara', 'da', 'gara', 'dut', 'duzu', 'du', 'dugu'],
+          gal:['Ni etxetik irten ___.', 'Zuk zer egin ___?', 'Hodei oso goiz jaiki ___.', 'Gu Bilbora joan ___.', 'Nik egunkaria irakurri ___.', 'Zu berandu etorri ___.', 'Laiak poltsa galdu ___.', 'Guk lagun batekin afaldu ___.'] },
+        { n:'3', m:'tx', zer:'Ezezko esaldiak · pásalo a negativa', en:'Adib.: *Goiz jaiki naiz.* → *Ez naiz goiz jaiki.*', it:L(1,5),
+          gal:['Zinemara joan naiz.', 'Gosaldu dut.', 'Uxue etxera itzuli da.', 'Egunkaria erosi dugu.', 'Berandu iritsi zara.'] },
+        { n:'4', m:'tx', zer:'Irakurri eta erantzun · lee y contesta', it:L(1,6),
+          tes:'Gaur Amets berandu jaiki da. Ez du gosaldu, eta autoan joan da lanera. Eguerdian, lankideekin bazkaldu du taberna batean. Arratsaldean, supermerkatura joan da eta afaria erosi du. Gauean, telebista ikusi du, eta goiz joan da ohera.',
+          gal:['Goiz jaiki da Amets?', 'Gosaldu du?', 'Norekin bazkaldu du?', 'Zer erosi du supermerkatuan?', 'Zer egin du gauean?', 'Eta zuk, zer egin duzu gaur?'] } ] },
+
+    { id:'A', k:'2', ref:['arian', '146–150'],
+      lan:'**Nora joan zara?** Relatar lo que ha pasado hace poco: los marcadores de tiempo (*orain dela gutxi, lehentxeago, aste honetan*), ir a hacer algo con **-t(z)era** (*erostera joan da*), adónde (**nora**: -ra, -era, -etara) y de dónde (**nondik**: -tik, -etik, -etatik).',
+      lot:[[6, 'Los casos'], [11, 'El aspecto: -tu, -t(z)en, -ko'], [17, 'Números, hora y calendario']],
+      ar:[
+        { t:'hiz', iz:'Noiz · hace poco', l:[
+          ['orain dela gutxi', 'hace poco'], ['lehentxeago', 'un poco antes'], ['aste honetan', 'esta semana'], ['asteburuan', 'el fin de semana'], ['aurten', 'este año'], ['oraindik ez', 'todavía no'] ] },
+        { t:'hiz', iz:'Asteko egunak · los días de la semana', l:[
+          ['astelehena', 'lunes'], ['asteartea', 'martes'], ['asteazkena', 'miércoles'], ['osteguna', 'jueves'], ['ostirala', 'viernes'], ['larunbata', 'sábado'], ['igandea', 'domingo'] ] },
+        { t:'elk', iz:'Elkarrizketa · de dónde vienes, adónde vas', l:[
+          ['Izaro', 'Kaixo, Unax! Nondik zatoz?', '¡Hola, Unax! ¿De dónde vienes?'],
+          ['Unax', 'Kiroldegitik nator. Igeri egitera joan naiz.', 'Vengo del polideportivo. He ido a nadar.'],
+          ['Izaro', 'Eta orain, nora zoaz?', 'Y ahora, ¿adónde vas?'],
+          ['Unax', 'Okindegira, ogia erostera. Eta zu?', 'A la panadería, a comprar pan. ¿Y tú?'],
+          ['Izaro', 'Ni lanetik nator. Aste honetan lan asko egin dut.', 'Yo vengo del trabajo. Esta semana he trabajado mucho.'],
+          ['Unax', 'Eta asteburuan, mendira joan zara?', 'Y el fin de semana, ¿has ido al monte?'],
+          ['Izaro', 'Ez, ez naiz mendira joan. Lagunekin afaltzera joan naiz.', 'No, no he ido al monte. He ido a cenar con los amigos.'] ] },
+        { t:'gram', iz:'Nora · Nondik',
+          p:['Ir a hacer algo: el verbo lleva **-t(z)era**: **ogia erostera joan naiz** (he ido a comprar pan), *afaltzera*, *ikastera*.',
+             'En los nombres propios acabados en *n* o *l*, de dónde es **-dik**: *Andoaindik*, *Usurbildik*.'],
+          taula:{ cols:['La palabra…', 'nora · adónde', 'nondik · de dónde'],
+            rows:[['acaba en vocal', '-ra: etxera · dendara · Bilbora', '-tik: etxetik · dendatik · Bilbotik'], ['acaba en consonante', '-era: lanera · hotelera', '-etik: lanetik · autobusetik'],
+                  ['varios (plural)', '-etara: tabernetara', '-etatik: tabernetatik']] } },
+
+        { n:'1', m:'tx', zer:'Nora? · pon cada palabra en *nora*', en:'Adib.: *plaza* → *plazara*.', it:L(1,8),
+          gal:['etxe → ___', 'denda → ___', 'lan → ___', 'hotel → ___', 'mendi → ___', 'hondartza → ___', 'Bilbo → ___', 'taberna (varias) → ___'] },
+        { n:'2', m:'tx', zer:'Nondik? · pon cada palabra en *nondik*', en:'Adib.: *denda* → *dendatik*.', it:L(1,8),
+          gal:['etxe → ___', 'plaza → ___', 'autobus → ___', 'mendi → ___', 'Bilbo → ___', 'Donostia → ___', 'taberna (varias) → ___', 'igerileku → ___'] },
+        { n:'3', m:'auk', zer:'Aukeratu · a qué ha ido',
+          it:[['1', ['erostera', 'erosi', 'erosten']], ['2', ['bazkaltzera', 'bazkaldu', 'bazkalduko']], ['3', ['ikastera', 'ikasi', 'ikasiko']], ['4', ['hartzera', 'hartu', 'hartuko']],
+              ['5', ['moztera', 'moztu', 'tindatzen']], ['6', ['bisitatzera', 'bisitatu', 'bisitatuko']]],
+          gal:['Okindegira joan naiz, ogia ___.', 'Jatetxera joan gara ___.', 'Liburutegira joan da ___.', 'Kafetegira joan dira kafe bat ___.', 'Ile-apaindegira joan naiz ilea ___.', 'Amonaren etxera joan gara amona ___.'] },
+        { n:'4', m:'bai', zer:'Irakurri · lee y di si es verdad (Bai) o no (Ez)', it:L(1,5),
+          tes:'Aste honetan Enarak gauza asko egin ditu. Astelehenean ile-apaindegira joan da, ilea moztera. Asteazkenean lagun batekin afaldu du. Ostiralean Bilbora joan da autobusean, kontzertu batera. Larunbatean berandu itzuli da Bilbotik, eta igandean ez da etxetik irten: oso nekatuta dago!',
+          gal:['Enara astelehenean ile-apaindegira joan da.', 'Asteazkenean lagun batekin bazkaldu du.', 'Bilbora autoan joan da.', 'Kontzertua Bilbon izan da.', 'Igandean mendira joan da.'] } ] },
+
+    { id:'B', k:'3', ref:['arian', '151–154'],
+      lan:'**Bihar zer egingo duzu?** Decir lo que se va a hacer: el futuro se forma con **-ko / -go** en el participio (**joango naiz**, **egingo dut**); en negativo, **ez naiz joango**. Con los marcadores *bihar, etzi, datorren astean*.',
+      lot:[[11, 'El aspecto: -tu, -t(z)en, -ko'], [17, 'Números, hora y calendario']],
+      ar:[
+        { t:'hiz', iz:'Noiz · más adelante', l:[
+          ['bihar', 'mañana'], ['etzi', 'pasado mañana'], ['datorren astean', 'la semana que viene'], ['laster', 'pronto'], ['gero', 'luego'] ] },
+        { t:'hiz', iz:'Hilabeteak · los meses', l:[
+          ['urtarrila', 'enero'], ['otsaila', 'febrero'], ['martxoa', 'marzo'], ['apirila', 'abril'], ['maiatza', 'mayo'], ['ekaina', 'junio'], ['uztaila', 'julio'], ['abuztua', 'agosto'],
+          ['iraila', 'septiembre'], ['urria', 'octubre'], ['azaroa', 'noviembre'], ['abendua', 'diciembre'] ] },
+        { t:'elk', iz:'Elkarrizketa · los planes', l:[
+          ['Hodei', 'Zer egingo duzu bihar, Laia?', '¿Qué harás mañana, Laia?'],
+          ['Laia', 'Goizean lan egingo dut, eta arratsaldean zinemara joango naiz.', 'Por la mañana trabajaré, y por la tarde iré al cine.'],
+          ['Hodei', 'Eta etzi?', '¿Y pasado mañana?'],
+          ['Laia', 'Etzi nire gurasoak etorriko dira, eta etxean bazkalduko dugu.', 'Pasado mañana vendrán mis padres y comeremos en casa.'],
+          ['Hodei', 'Eta datorren astean? Oporrak dituzu?', '¿Y la semana que viene? ¿Tienes vacaciones?'],
+          ['Laia', 'Bai! Datorren astean Parisera joango naiz.', '¡Sí! La semana que viene iré a París.'],
+          ['Hodei', 'Trenean?', '¿En tren?'],
+          ['Laia', 'Ez, ez naiz trenean joango. Autoan joango naiz, lagun batekin.', 'No, no iré en tren. Iré en coche, con un amigo.'] ] },
+        { t:'gram', iz:'-ko, -go · lo que harás',
+          p:['El futuro se forma con **-ko** o **-go** en el participio, y con el mismo auxiliar: **joango naiz** (iré), **egingo dut** (haré).',
+             'En negativa el auxiliar se adelanta: **Ez naiz joango** · **Ez dut egingo**.'],
+          taula:{ cols:['El participio…', 'Sufijo', 'Adibidea'], rows:[['no acaba en -n', '-ko', 'hartu → hartuko · etorri → etorriko · atera → aterako'], ['acaba en -n', '-go', 'joan → joango · egin → egingo · jan → jango']] } },
+
+        { n:'1', m:'tx', zer:'Bihar · pon el verbo en futuro', en:'Adib.: *gosaldu* → *gosalduko*.', it:L(1,10),
+          gal:['joan → ___', 'etorri → ___', 'egin → ___', 'hartu → ___', 'jan → ___', 'ikusi → ___', 'itzuli → ___', 'izan → ___', 'bazkaldu → ___', 'atera → ___'] },
+        { n:'2', m:'auk', zer:'Aukeratu · ya hecho o por hacer',
+          it:[['1', ['joan', 'joango']], ['2', ['erosi', 'erosiko']], ['3', ['etorri', 'etorriko']], ['4', ['jaiki', 'jaikiko']], ['5', ['ikusi', 'ikusiko']], ['6', ['egin', 'egingo']], ['7', ['itzuli', 'itzuliko']], ['8', ['hartu', 'hartuko']]],
+          gal:['Bihar Donostiara ___ naiz.', 'Gaur goizean ogia ___ dut.', 'Datorren astean lagunak ___ dira.', 'Gaur berandu ___ naiz.', 'Etzi film bat ___ dugu.', 'Aste honetan lan asko ___ dut.',
+               'Laster etxera ___ gara.', 'Orain dela gutxi kafe bat ___ dut.'] },
+        { n:'3', m:'tx', zer:'Ezezko esaldiak · pásalo a negativa', en:'Adib.: *Bihar joango naiz.* → *Bihar ez naiz joango.*', it:L(1,4),
+          gal:['Bihar lan egingo dut.', 'Etzi etorriko dira.', 'Datorren astean Bilbora joango gara.', 'Gauean telebista ikusiko dut.'] },
+        { n:'4', m:'tx', zer:'Irakurri eta erantzun · lee y contesta', it:L(1,6),
+          tes:'Datorren asteburuan Ugaitz eta Nora Zarautzera joango dira. Larunbat goizean autobusean joango dira, eta hotel txiki batean egongo dira. Arratsaldean hondartzara joango dira, eta gauean arraina jango dute portuko jatetxe batean. Igandean, goiz jaikiko dira eta mendira joango dira. Arratsaldean itzuliko dira etxera.',
+          gal:['Nora joango dira Ugaitz eta Nora?', 'Noiz joango dira?', 'Zer jango dute gauean?', 'Zer egingo dute igandean?', 'Noiz itzuliko dira etxera?', 'Eta zuk, zer egingo duzu datorren asteburuan?'] } ] },
+
+    { id:'C', k:'4', ref:['arian', '155–159'],
+      lan:'**Zertan ari zara?** Decir lo que está pasando ahora: **-t(z)en ari izan** (*idazten ari naiz*) y los verbos sintéticos *egon, joan, etorri, ibili* y *eduki* (**nago, noa, nator, nabil, daukat**).',
+      lot:[[14, 'Nahi, behar, ahal y ari izan'], [12, 'Verbos sintéticos']],
+      ar:[
+        { t:'elk', iz:'Elkarrizketa · por teléfono', l:[
+          ['Aiora', 'Kaixo, Ekaitz! Zertan ari zara?', '¡Hola, Ekaitz! ¿Qué estás haciendo?'],
+          ['Ekaitz', 'Afaria prestatzen ari naiz. Non zaude zu?', 'Estoy preparando la cena. ¿Dónde estás tú?'],
+          ['Aiora', 'Kalean nago. Etxera noa orain.', 'Estoy en la calle. Ahora voy a casa.'],
+          ['Ekaitz', 'Nondik zatoz?', '¿De dónde vienes?'],
+          ['Aiora', 'Lanetik nator. Oso nekatuta nago!', 'Vengo del trabajo. ¡Estoy muy cansada!'],
+          ['Ekaitz', 'Eta umeak? Zurekin datoz?', '¿Y los niños? ¿Vienen contigo?'],
+          ['Aiora', 'Ez, umeak parkean dabiltza, aitonarekin jolasean.', 'No, los niños andan en el parque, jugando con el abuelo.'],
+          ['Ekaitz', 'Ondo. Laster arte, orduan!', 'Bien. ¡Hasta pronto, entonces!'] ] },
+        { t:'gram', iz:'-t(z)en ari · lo que está pasando',
+          p:['Lo que está pasando ahora: el verbo en **-t(z)en**, más **ari** y *izan*: **idazten ari naiz** (estoy escribiendo), **irakurtzen ari da** (está leyendo).',
+             'Se pregunta con **Zertan ari zara?** (¿qué estás haciendo?).'],
+          taula:{ cols:['', 'ahora', '', 'ahora'], rows:[['idatzi', 'idazten', 'irakurri', 'irakurtzen'], ['ikasi', 'ikasten', 'entzun', 'entzuten'], ['edan', 'edaten', 'egin', 'egiten'], ['erosi', 'erosten', 'prestatu', 'prestatzen']] } },
+        { t:'gram', iz:'Noa, nator, nabil · verbos con formas propias',
+          p:['Algunos verbos tienen formas propias para lo que pasa ahora mismo: **noa** (voy), **nator** (vengo), **nabil** (ando), **nago** (estoy).'],
+          taula:{ cols:['', 'egon', 'joan', 'etorri', 'ibili'], rows:[['ni', 'nago', 'noa', 'nator', 'nabil'], ['zu', 'zaude', 'zoaz', 'zatoz', 'zabiltza'], ['hura', 'dago', 'doa', 'dator', 'dabil'],
+            ['gu', 'gaude', 'goaz', 'gatoz', 'gabiltza'], ['zuek', 'zaudete', 'zoazte', 'zatozte', 'zabiltzate'], ['haiek', 'daude', 'doaz', 'datoz', 'dabiltza']] } },
+
+        { n:'1', m:'tx', zer:'Orain · pon el verbo en *-t(z)en*', en:'Adib.: *erosi* → *erosten*.', it:L(1,8),
+          gal:['idatzi → ___', 'irakurri → ___', 'ikasi → ___', 'entzun → ___', 'edan → ___', 'egin → ___', 'prestatu → ___', 'dantzatu → ___'] },
+        { n:'2', m:'tx', zer:'Osatu · *ari naiz, ari zara…*', it:L(1,6), kutxa:IZAN,
+          gal:['Ni liburu bat irakurtzen ari ___.', 'Zu zertan ari ___?', 'Uxue musika entzuten ari ___.', 'Gu euskara ikasten ari ___.', 'Zuek zer egiten ari ___?', 'Umeak ura edaten ari ___.'] },
+        { n:'3', m:'auk', zer:'Aukeratu · *joan*, *etorri*, *ibili* ala *egon*',
+          it:[['1', ['noa', 'nator', 'nago']], ['2', ['zoaz', 'zatoz', 'zaude']], ['3', ['dabil', 'doa', 'dator']], ['4', ['goaz', 'gatoz', 'gaude']], ['5', ['doaz', 'datoz', 'daude']],
+              ['6', ['zoazte', 'zatozte', 'zaudete']], ['7', ['nago', 'noa', 'nator']], ['8', ['dator', 'doa', 'dabil']]],
+          gal:['Ni etxera ___.', 'Zu nondik ___?', 'Aimar parkean ___, lagunekin.', 'Gu zinemara ___.', 'Haiek lanetik ___.', 'Zuek nora ___?', 'Ni kalean ___.', 'Hodei Bilbotik ___.'] },
+        { n:'4', m:'tx', zer:'Irakurri eta erantzun · lee y contesta', it:L(1,5),
+          tes:'Etxean, denak zerbait egiten ari dira. Aita sukaldean dago, bazkaria prestatzen. Ama egunkaria irakurtzen ari da egongelan. Izaro bere logelan dago: musika entzuten eta mezu bat idazten ari da. Eta ni? Ni kalean nabil, etxera noa!',
+          gal:['Non dago aita?', 'Zertan ari da ama?', 'Non dago Izaro?', 'Zer entzuten ari da Izaro?', 'Eta zu, zertan ari zara orain?'] } ] },
+
+    { id:'E', k:'5', ref:['arian', '160–162'],
+      lan:'**Erabili.** Práctica de toda la unidad: preguntas sobre un mensaje que cuenta un viaje, un repaso de elegir, tu día y tus planes por escrito.',
+      ar:[
+        { n:'1', m:'tx', zer:'Irakurri eta erantzun · lee el mensaje y contesta', it:L(1,6),
+          tes:'Kaixo, Laia! Donostian nago, Unaxekin. Gaur goizean trenean etorri gara Gasteiztik. Hondartzara joan gara, eta jatetxe on batean bazkaldu dugu. Orain kafe bat hartzen ari gara portuan. Bihar museoa bisitatuko dugu, eta etzi itzuliko gara etxera. Laster arte! Hodei.',
+          gal:['Non dago Hodei?', 'Norekin dago?', 'Nondik etorri dira?', 'Zertan ari dira orain?', 'Zer egingo dute bihar?', 'Noiz itzuliko dira etxera?'] },
+        { n:'2', m:'auk', zer:'Aukeratu · elige la opción correcta',
+          it:[['1', ['naiz', 'dut', 'noa']], ['2', ['naiz', 'dut', 'nago']], ['3', ['dut', 'naiz', 'noa']], ['4', ['-ra', '-tik', '-an']], ['5', ['-era', '-etik', '-ean']], ['6', ['erostera', 'erosi', 'erosiko']],
+              ['7', ['joan', 'joango', 'joaten']], ['8', ['ari', 'nahi', 'behar']], ['9', ['zoaz', 'zatoz', 'zaude']], ['10', ['dabiltza', 'doaz', 'datoz']]],
+          gal:['Gaur goiz jaiki ___.', 'Nik kafe bat hartu ___.', 'Ez ___ gosaldu.', 'Okindegi___ joan naiz.', 'Lan___ nator.', 'Ogia ___ joan naiz.', 'Bihar zinemara ___ naiz.',
+               'Liburu bat irakurtzen ___ naiz.', '— Nora ___? — Etxera.', 'Umeak parkean ___.'] },
+        { n:'3', m:'tx', bat:true, zer:'Zure eguna · contesta sobre ti', it:L(1,5),
+          gal:['Zer egin duzu gaur goizean?', 'Nora joan zara aste honetan?', 'Zer egingo duzu bihar?', 'Zer egingo duzu datorren asteburuan?', 'Zertan ari zara orain?'] },
+        { n:'4', m:'idaz', zer:'Idatzi · tu día y tus planes', en:'Cuenta qué has hecho hoy, qué estás haciendo ahora y qué harás mañana.' } ] },
+
+    { id:'Bd', k:'6', ref:['arian', '163'],
+      lan:'**Badakizu?** Autoevaluación de la unidad: siete puntos, cada uno con Bai o Ez. Lo que marques con Ez, repásalo en su apartado.',
+      ar:[
+        { n:'', m:'bai', hizk:'es', zer:'Badakizu? · ¿ya sabes…?', it:L(1,7),
+          gal:['Contar lo que he hecho hoy (participio + *izan* o *ukan*).', 'Decirlo en negativa.', 'Decir adónde voy y de dónde vengo (*nora*, *nondik*).', 'Decir a qué voy (*-t(z)era*).',
+               'Hablar de lo que haré (*-ko*, *-go*).', 'Decir qué estoy haciendo ahora (*-t(z)en ari*).', 'Usar *noa*, *nator*, *nabil* y *nago*.'] } ] }
+  ] });
+
   window.LIBURUAK = window.LIBURUAK || {};
   window.LIBURUAK.ikasgaiak = { src:'claude', izena:'Ikasgaiak A1', taldea:'Ikasgaiak', unitateak:U };
 })();

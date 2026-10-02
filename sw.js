@@ -3,7 +3,7 @@
    Estrategia: stale-while-revalidate para el mismo origen; las fuentes y el
    banco de perfiles (Supabase) van siempre a la red.
    Lo de pribatua/ (tu libro y tus audios, solo en tu ordenador) no se cachea. */
-var CACHE = 'koadernoa-v4';
+var CACHE = 'koadernoa-v5';
 var ASSETS = [
   'index.html', 'ikasgaiak.html', 'arian.html', 'bakarka.html', 'geruzak.html', 'glosarioa.html',
   'oinarria.css', 'hub.js', 'iturriak.js', 'orriak.js', 'egiaztatu.js', 'libreta.js',

@@ -225,6 +225,39 @@
           _oh:'Es un modelo: cambia la persona, el regalo y la razón.' }
   };
 
+  /* ── 7 · Gaur, bihar, orain ──────────────────────────────────────────── */
+  E['ika-07'] = {
+    At1: { '1':'naiz', '2':'dut', '3':'da', '4':'du', '5':'gara', '6':'dugu', '7':'zara', '8':'dute' },
+    At2: { '1':'naiz', '2':'duzu', '3':'da', '4':'gara', '5':'dut', '6':'zara', '7':'du', '8':'dugu' },
+    At3: { '1':M('Ez naiz zinemara joan.'), '2':M('Ez dut gosaldu.'), '3':M('Uxue ez da etxera itzuli.'), '4':M('Ez dugu egunkaria erosi. / Ez dugu egunkaririk erosi.'), '5':M('Ez zara berandu iritsi.') },
+    At4: { '1':M('Ez, berandu jaiki da. / Ez, ez da goiz jaiki. / Ez.'), '2':M('Ez, ez du gosaldu. / Ez.'), '3':M('Lankideekin bazkaldu du. / Lankideekin.'), '4':M('Afaria erosi du. / Afaria.'),
+           '5':M('Telebista ikusi du, eta goiz joan da ohera. / Telebista ikusi du.'), _oh:'La 6 es sobre ti: no tiene una única respuesta.' },
+
+    A1: { '1':'etxera', '2':'dendara', '3':'lanera', '4':'hotelera', '5':'mendira', '6':'hondartzara', '7':'Bilbora', '8':'tabernetara' },
+    A2: { '1':'etxetik', '2':'plazatik', '3':'autobusetik', '4':'menditik', '5':'Bilbotik', '6':'Donostiatik', '7':'tabernetatik', '8':'igerilekutik' },
+    A3: { '1':'erostera', '2':'bazkaltzera', '3':'ikastera', '4':'hartzera', '5':'moztera', '6':'bisitatzera' },
+    A4: { '1':'Bai', '2':'Ez', '3':'Ez', '4':'Bai', '5':'Ez' },
+
+    B1: { '1':'joango', '2':'etorriko', '3':'egingo', '4':'hartuko', '5':'jango', '6':'ikusiko', '7':'itzuliko', '8':'izango', '9':'bazkalduko', '10':'aterako' },
+    B2: { '1':'joango', '2':'erosi', '3':'etorriko', '4':'jaiki', '5':'ikusiko', '6':'egin', '7':'itzuliko', '8':'hartu' },
+    B3: { '1':M('Bihar ez dut lanik egingo. / Bihar ez dut lan egingo.'), '2':M('Etzi ez dira etorriko.'), '3':M('Datorren astean ez gara Bilbora joango.'), '4':M('Gauean ez dut telebista ikusiko. / Gauean ez dut telebistarik ikusiko.') },
+    B4: { '1':M('Zarautzera joango dira. / Zarautzera.'), '2':M('Datorren asteburuan joango dira. / Datorren asteburuan. / Larunbat goizean.'), '3':M('Arraina jango dute. / Arraina.'),
+          '4':M('Goiz jaikiko dira eta mendira joango dira. / Mendira joango dira.'), '5':M('Igande arratsaldean itzuliko dira. / Igande arratsaldean. / Arratsaldean.'), _oh:'La 6 es sobre ti: no tiene una única respuesta.' },
+
+    C1: { '1':'idazten', '2':'irakurtzen', '3':'ikasten', '4':'entzuten', '5':'edaten', '6':'egiten', '7':'prestatzen', '8':'dantzatzen' },
+    C2: { '1':'naiz', '2':'zara', '3':'da', '4':'gara', '5':'zarete', '6':'dira' },
+    C3: { '1':'noa', '2':'zatoz', '3':'dabil', '4':'goaz', '5':'datoz', '6':'zoazte', '7':'nago', '8':'dator' },
+    C4: { '1':M('Sukaldean dago. / Sukaldean.'), '2':M('Egunkaria irakurtzen ari da. / Egunkaria irakurtzen.'), '3':M('Bere logelan dago. / Bere logelan. / Logelan.'), '4':M('Musika entzuten ari da. / Musika.'),
+          _oh:'La 5 es sobre ti: no tiene una única respuesta.' },
+
+    E1: { '1':M('Donostian dago. / Donostian.'), '2':M('Unaxekin dago. / Unaxekin.'), '3':M('Gasteiztik etorri dira. / Gasteiztik.'), '4':M('Kafe bat hartzen ari dira portuan. / Kafe bat hartzen ari dira. / Kafe bat hartzen.'),
+          '5':M('Museoa bisitatuko dute. / Museoa bisitatu.'), '6':M('Etzi itzuliko dira. / Etzi.') },
+    E2: { '1':'naiz', '2':'dut', '3':'dut', '4':'-ra', '5':'-etik', '6':'erostera', '7':'joango', '8':'ari', '9':'zoaz', '10':'dabiltza' },
+    E3: NIREA,
+    E4: { t:M('Gaur goiz jaiki naiz, eta lanera joan naiz autobusean. Eguerdian lagun batekin bazkaldu dut. Orain etxean nago, euskara ikasten ari naiz. Bihar ez dut lanik egingo: mendira joango naiz.'),
+          _oh:'Es un modelo: cuenta tu día y tus planes.' }
+  };
+
   window.ERANTZUNAK = window.ERANTZUNAK || {};
   window.ERANTZUNAK.ikasgaiak = E;
 })();

@@ -72,7 +72,7 @@ export default async function(t){
     });
     Object.keys(SU).forEach(k => { if (!keys.has(k)) solBad.push(`${u.id}: soluciones del ejercicio «${k}», que no existe`); });
   });
-  t.ok(!bad.length && nEx >= 136, `Ikasgaiak: ${nEx} ejercicios y ${nBlocks} bloques bien formados; cada apartado remite a sus páginas del libro, y ningún ejercicio lleva página ni pista` + (bad.length ? ' — ' + bad.slice(0, 4).join(' | ') : ''));
+  t.ok(!bad.length && nEx >= 157, `Ikasgaiak: ${nEx} ejercicios y ${nBlocks} bloques bien formados; cada apartado remite a sus páginas del libro, y ningún ejercicio lleva página ni pista` + (bad.length ? ' — ' + bad.slice(0, 4).join(' | ') : ''));
   t.ok(!solBad.length && !noSol.length, `Ikasgaiak: ${nSol} ejercicios con corrección y ${nNo} sin ella, con su motivo; cada solución corresponde a una casilla` + (solBad.length ? ' — ' + solBad.slice(0, 4).join(' | ') : '') + (noSol.length ? ' — sin solución: ' + noSol.join(', ') : ''));
 
   // las hojas de los libros siguen sin texto: los campos de las lecciones propias no se usan en ellas
