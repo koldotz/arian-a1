@@ -7,7 +7,7 @@ Hojas de respuestas para trabajar dos libros de euskera de nivel A1 desde la pan
 | Página | Qué es |
 |---|---|
 | `index.html` | Portada: los dos libros, con el progreso de cada unidad |
-| `ikasgaiak.html` | *Ikasgaiak*: lecciones propias para trabajar **sin el libro** (lecciones 1 a 4) |
+| `ikasgaiak.html` | *Ikasgaiak*: lecciones propias para trabajar **sin el libro** (lecciones 1 a 6) |
 | `arian.html` | *Arian A1 · ikaslearen liburua* (Elkar): 12 unidades, 457 ejercicios, 109 con audio |
 | `bakarka.html` | *Bakarka 1* (J.A. Letamendia, Elkar): lecciones 2 a 14, 144 ejercicios |
 | `geruzak.html` | *Euskararen Geruzak*: la gramática del nivel en 20 bloques, con «gafas» de traducción y morfemas |
@@ -21,12 +21,12 @@ Lo que sí es texto es propio y va marcado con **⚠ Claude**: la nota de cada a
 
 ## Ikasgaiak · lecciones sin libro
 
-Las hojas de respuestas no sirven sin el libro delante. *Ikasgaiak* es la parte que sí: cada apartado trae su texto, su vocabulario, su gramática y sus ejercicios, con corrección. Están hechas las lecciones 1 a 4 (92 ejercicios), que siguen las unidades 1 a 4 de *Arian A1*.
+Las hojas de respuestas no sirven sin el libro delante. *Ikasgaiak* es la parte que sí: cada apartado trae su texto, su vocabulario, su gramática y sus ejercicios, con corrección. Están hechas las lecciones 1 a 6 (136 ejercicios), que siguen las unidades 1 a 6 de *Arian A1*.
 
 - **Del libro sale el temario, no el texto.** Los puntos que se trabajan, las formas gramaticales y las palabras son los de la unidad y las anteriores; cada apartado dice en qué páginas lo trata el libro. No se añade vocabulario ni gramática que esas unidades no tengan.
 - **Las frases son nuevas.** Diálogos, textos, ejercicios y soluciones están escritos por Claude (⚠), con otros nombres y otras situaciones; no son los del libro ni una versión de ellos. Las traducciones y las explicaciones en castellano también son de Claude.
-- **Cómo se comprueba.** En el ordenador donde está el libro, `node pribatua/tresnak/ikasgaiak-iturria.mjs` verifica las dos cosas contra cada unidad (con su transcripción personal o, donde no la hay, con la lista de palabras sueltas y las huellas de frases que saca `hitzak-atera.mjs` de las páginas; nada de eso está en este repositorio): que ninguna palabra en euskera de la lección queda fuera del vocabulario de su unidad y las anteriores, y que ninguna frase coincide con una del libro, tampoco cambiando los nombres. Las cuatro lecciones dan 0 y 0.
-- **Lo que falta.** Las lecciones 5 a 12 (de cada unidad hay que sacar antes su lista de palabras), el audio (no hay) y que alguien que sepa euskera revise las frases.
+- **Cómo se comprueba.** En el ordenador donde está el libro, `node pribatua/tresnak/ikasgaiak-iturria.mjs` verifica las dos cosas contra cada unidad (con su transcripción personal o, donde no la hay, con la lista de palabras sueltas y las huellas de frases que saca `hitzak-atera.mjs` de las páginas; nada de eso está en este repositorio): que ninguna palabra en euskera de la lección queda fuera del vocabulario de su unidad y las anteriores, y que ninguna frase coincide con una del libro, tampoco cambiando los nombres. Las seis lecciones dan 0 y 0.
+- **Lo que falta.** Las lecciones 7 a 12 (de cada unidad hay que sacar antes su lista de palabras), el audio (no hay) y que alguien que sepa euskera revise las frases.
 
 ## Corrección («Egiaztatu»)
 

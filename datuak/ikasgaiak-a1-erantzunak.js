@@ -159,6 +159,72 @@
           _oh:'Es un modelo: cambia los datos por los de tu piso.' }
   };
 
+  /* ── 5 · Mahaian ─────────────────────────────────────────────────────── */
+  E['ika-05'] = {
+    At1: { '1':'edaria', '2':'janaria', '3':'edaria', '4':'janaria', '5':'edaria', '6':'janaria', '7':'edaria', '8':'janaria' },
+    At2: { '1':'zait', '2':'zaizkit', '3':'zaizu', '4':'zaizkizu', '5':'zaio', '6':'zaizkio' },
+    At3: { '1':'zaigu', '2':'zaizkigu', '3':'zaizue', '4':'zaizkie', '5':'zaie', '6':'zaizkizue' },
+    At4: { '1':'niri', '2':'guri', '3':'hari', '4':'haiei', '5':'zuri', '6':'zuei' },
+    At5: { '1':M('Ez zait esnea gustatzen.'), '2':M('Ez zaizkit barazkiak gustatzen.'), '3':M('Ez zaio kafea gustatzen.'), '4':M('Ez zaizkigu sagarrak gustatzen.'), '5':M('Ez zaie haragia gustatzen.') },
+
+    A1: { '1':'ri / Uxueri', '2':'i / Juleni', '3':'ari / umeari', '4':'ei / umeei', '5':'ri / Enarari', '6':'i / Unaxi', '7':'ari / lagunari', '8':'ei / lagunei' },
+    A2: { '1':'dut', '2':'ditut', '3':'du', '4':'ditugu', '5':'duzu', '6':'dituzte' },
+    A3: { '1':M('Barazki-menestra nahi du. / Barazki-menestra.'), '2':M('Hodeiri. / Hodeiri ez zaizkio gustatzen.'), '3':M('Makarroiak nahiago ditu. / Makarroiak.'),
+          '4':M('Aiorak fruta nahi du, eta Hodeik izozkia. / Fruta eta izozkia.'), '5':M('Ura eta ardoa edan nahi dute. / Ura eta ardoa.') },
+    A4: { '1':'lehenengo', '2':'postrerako', '3':'bigarren', '4':'lehenengo', '5':'postrerako', '6':'bigarren', '7':'lehenengo', '8':'postrerako' },
+
+    B1: { '1':'zuritu', '2':'bota', '3':'egosi', '4':'nahasi', '5':'berotu', '6':'frijitu', '7':'irabiatu', '8':'estali' },
+    B2: { '1':'lehenengo', '2':'gero', '3':'bitartean', '4':'azkenik' },
+    B3: { '1':'litro', '2':'dozena', '3':'kilo', '4':'koilarakada', '5':'baso', '6':'pixka', '7':'zati', '8':'zurrusta' },
+    B4: { '1':'Bai', '2':'Ez', '3':'Ez', '4':'Bai', '5':'Bai' },
+
+    C1: { '1':'da', '2':'dira', '3':'da', '4':'dira', '5':'da', '6':'dira' },
+    C2: { '1':'ona da', '2':'kaltegarria da', '3':'ona da', '4':'kaltegarria da', '5':'ona da', '6':'kaltegarria da', '7':'ona da', '8':'kaltegarria da' },
+    C3: { '1':'lasaitzeko', '2':'egoteko', '3':'hozteko', '4':'jateko', '5':'askaltzeko' },
+    C4: { '1':M('Fruta, esnea eta zerealak jatea komeni da. / Fruta, esnea eta zerealak.'), '2':M('Barazkiak eta fruta jatea. / Barazkiak eta fruta.'),
+          '3':M('Ez, astean bitan edo hirutan jatea ona da. / Ez, astean bitan edo hirutan. / Ez.'), '4':M('Azukre asko daukate eta. / Azukre asko daukate.'), '5':M('Ura, ez ardoa. / Ura.') },
+
+    E1: { '1':M('Aitari gustatzen zaio. / Aitari.'), '2':M('Arraina nahiago du. / Arraina.'), '3':M('Ez, ez zaizkio gustatzen. / Ez, makarroiak eta kroketak nahiago ditu. / Ez.'),
+          '4':M('Zopa gustatzen zaie. / Zopa eta fruta. / Zopa.'), _oh:'La 5 es sobre ti: no tiene una única respuesta.' },
+    E2: { '1':'zait', '2':'zaizkizu', '3':'-i', '4':'dut', '5':'postrerako', '6':'Zuritu', '7':'Dozena', '8':'da', '9':'kaltegarria', '10':'lasaitzeko' },
+    E3: NIREA,
+    E4: { t:M('Niri arraina eta barazkiak asko gustatzen zaizkit, baina ez zait haragia gustatzen. Ura nahiago dut, baina noizean behin ardo baso bat hartzea gustatzen zait. Nire aholkua: egunero fruta jatea komeni da, ona da eta.'),
+          _oh:'Es un modelo: cambia los gustos por los tuyos.' }
+  };
+
+  /* ── 6 · Dendaz denda ────────────────────────────────────────────────── */
+  E['ika-06'] = {
+    At1: { '1':'okindegian', '2':'arrandegian', '3':'harategian', '4':'frutategian', '5':'lurrindegian', '6':'liburu-dendan', '7':'bitxi-dendan', '8':'zapata-dendan', '9':'loradendan', '10':'kirol-dendan' },
+    At2: { '1':'dut', '2':'ditut', '3':'duzu', '4':'ditugu', '5':'du', '6':'dituzte' },
+    At3: { '1':M('Ez dut arrainik erosi behar.'), '2':M('Ez dut sagarrik erosi behar.'), '3':M('Ez dugu oliorik erosi behar.'), '4':M('Ez du zapatarik erosi behar.') },
+    At4: { '1':'Bai', '2':'Ez', '3':'Ez', '4':'Bai', '5':'Bai' },
+
+    A1: { '1':'azkena', '2':'kilo', '3':'nolakoak', '4':'besterik', '5':'zenbat', '6':'txartelaz' },
+    A2: { '2':M('Bi euro.'), '15':M('Hamabost euro.'), '40':M('Berrogei euro.'), '120':M('Ehun eta hogei euro.'), '080':M('Laurogei zentimo.'), '350':M('Hiru euro eta berrogeita hamar zentimo. / Hiru euro eta berrogeita hamar.') },
+    A3: { '1':'dut', '2':'ditut', '3':'Nolakoa', '4':'Nolakoak', '5':'dugu', '6':'ditu' },
+    A4: { '1':M('Supermerkatuan dago. / Supermerkatuan.'), '2':M('Dozena bat arrautza. / Dozena bat. / Hamabi.'), '3':M('Zazpi eurotan dago. / Zazpi eurotan. / Zazpi euro.'),
+          '4':M('Hamaika euro dira. / Hamaika euro. / Hamaika.'), '5':M('Txartelaz ordaindu nahi du. / Txartelaz.') },
+
+    B1: { '1':'zuria', '2':'beltza', '3':'gorria', '4':'urdina', '5':'berdea', '6':'horia', '7':'grisa', '8':'marroia' },
+    B2: { '1':'txikiegi / txikiegia', '2':'handiegi / handiegia', '3':'luzeegi / luzeegia', '4':'motzegi / motzegia', '5':'estuegi / estuegia', '6':'zabalegi / zabalegia', '7':'garestiegi / garestiegia', '8':'ilunegi / ilunegia' },
+    B3: { '1':'dauka', '2':'dauzka', '3':'dauzkat', '4':'daukazu', '5':'dauzka', '6':'daukat' },
+    B4: { '1':'zait', '2':'zaizkit', '3':'zaio', '4':'zaizkizu', '5':'zaigu', '6':'zaizkie' },
+    B5: { '1':M('Jantzi-dendan dago. / Jantzi-dendan.'), '2':M('Luzeegi dauzka. / Luzeegi.'), '3':M('Hamabi euro balio du. / Hamabi euro. / Hamabi.'),
+          '4':M('Oso polita da, baina garestiegia. / Polita, baina garestiegia.'), '5':M('Kamiseta bakarrik erosi nahi du. / Kamiseta berdea. / Kamiseta.') },
+
+    C1: { '1':'amarentzat', '2':'aitarentzat', '3':'umearentzat', '4':'umeentzat', '5':'Uxuerentzat', '6':'Julenentzat', '7':'niretzat', '8':'zuretzat', '9':'guretzat', '10':'haientzat' },
+    C2: { '1':'delako', '2':'direlako', '3':'zaiolako', '4':'daukadalako', '5':'zaielako' },
+    C3: { '1':'irakurtzea', '2':'pintatzea', '3':'mendira joatea', '4':'futbolean jokatzea', '5':'igeri egitea', '6':'korrika egitea' },
+    C4: { '1':M('Hiru opari erosi behar ditu. / Hiru opari. / Hiru.'), '2':M('Bere aitarentzat dira. / Bere aitarentzat. / Aitarentzat.'), '3':M('Politak direlako.'),
+          '4':M('Futbolean jokatzea asko gustatzen zaio. / Futbolean jokatzea.'), _oh:'La 5 es sobre ti: no tiene una única respuesta.' },
+
+    E1: { a:'5', b:'1', c:'4', d:'2', e:'6', f:'3' },
+    E2: { '1':'okindegian', '2':'ditut', '3':'-ik', '4':'Zenbat', '5':'Nolakoak', '6':'-egi', '7':'dauzka', '8':'-rentzat', '9':'delako', '10':'zaio' },
+    E3: NIREA,
+    E4: { t:M('Opari bat erosi behar dut nire lagun Maddirentzat. Gitarra bat erosi nahi dut, musika asko gustatzen zaiolako. Baina gitarra garestiegia da! Liburu bat ere ona da, irakurtzea gustatzen zaiolako eta merkeagoa delako.'),
+          _oh:'Es un modelo: cambia la persona, el regalo y la razón.' }
+  };
+
   window.ERANTZUNAK = window.ERANTZUNAK || {};
   window.ERANTZUNAK.ikasgaiak = E;
 })();
